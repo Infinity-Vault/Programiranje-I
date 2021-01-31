@@ -4,4 +4,5 @@ Poštujući sve faze programiranja, napisati program koji korisniku omogućava u
 
 Za odabranu funkciju sin izraz je:
 
-        f(x) = 1 + $\frac{n!}{k!(n-k)!}$
+![](https://ibb.co/hy8nn7b)
+
