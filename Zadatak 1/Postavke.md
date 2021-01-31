@@ -4,5 +4,5 @@ Poštujući sve faze programiranja, napisati program koji korisniku omogućava u
 
 Za odabranu funkciju sin izraz je:
 
-![](https://ibb.co/hy8nn7b)
+![alt_text](https://ibb.co/hy8nn7b)
 
