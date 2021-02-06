@@ -25,3 +25,11 @@ Napisati program koji će najprije učitati dva prirodna broja n1 i n2 (n2 > n1)
 Zatim prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta broja.
 U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja
 obavlja zadani posao.
+
+##[**05**] (05.cpp)
+ Napisati program koji omogućava korisniku unos prirodnog broja N (50 < N < 5000000). 
+Zatim uneseni broj proslijediti funkciji kao parametar po referenci.
+U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se poredak cifri unesenog broja obrnuti.
+Prilikom obrtanja potrebno je odbaciti neparne cifre.
+
+Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.

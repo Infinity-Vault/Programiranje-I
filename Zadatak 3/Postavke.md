@@ -11,3 +11,5 @@ Napisati rekurzivnu funkciju koja će taj niz popuniti serijom brojeva 2, 4, 8, 
 počevši od broja 2. Zatim,korisnik unosi željeni broj te rekurzivnom funkcijom provjerava da li je taj broj član kreiranog niza.
 Rekurzija se prekida kada se popuni cijeli niz ili kada se desi overflow na integer varijabli.
 U ovom zadatku je zabranjeno indeksirati niz uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
+
+## [**03**](03.cpp)
