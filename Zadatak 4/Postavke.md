@@ -27,14 +27,14 @@ golovi: rand() % 5
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vozilo (vozilo je struktura čija su obilježja data u nastavku).
 Omogućiti korisniku da unese dimenzije niza.
-
+```c++
 struct vozilo
 {
     char *markaVozila;
     char *brojSasije;
     char *tipVozila; //dozvoliti unos samo vrijednosti "A", "B", ili "C"
     int *kubnihCM;
-};
+};```
 Redovi dvodimenzionalnog niza predstavljaju različite firme a u kolone različita vozila u tim firmama.
 (radi jednostavnosti rješenja podrazumijevati da svaka firma ima isti broj vozila). 
 Omogućiti korisniku unos svih podataka za sva vozila. 
