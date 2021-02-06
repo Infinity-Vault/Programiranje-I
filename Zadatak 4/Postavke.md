@@ -53,7 +53,7 @@ svih vozila tipa "B" u cijeloj matrici
 U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. 
 Obavezno koristiti aritmetiku pokazivača.
 
-## [**03](03.cpp)
+## [**03**](03.cpp)
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vozilo (vozilo je struktura čija su obilježja data u nastavku). 
 Omogućiti korisniku da unese dimenzije niza.
 ```c++
