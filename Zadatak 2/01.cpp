@@ -26,7 +26,7 @@ int generisiBacanja()
 		int kocka2 = rand() % 6 + 1;
 		int kocka3 = rand() % 6 + 1;
 
-		if (kocka1 == kocka2 == kocka3)
+		if (kocka1 == kocka2 && kocka2 == kocka3)
 		{
 			broj_istih++;
 		}
