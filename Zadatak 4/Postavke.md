@@ -72,7 +72,7 @@ Naći i ispisati prosjek potrošnje goriva po km u vozilima tipa C u cijeloj mat
 
 U zadataku koristiti artimetiku pokazivaca.
 
-##[**04**](04.cpp)
+## [**04**](04.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vremenska_prognoza (prognoza je struktura čija su obilježja data u nastavku).
 Omogućiti korisniku da unese dimenzije niza.
@@ -90,4 +90,4 @@ Zatim napraviti funkciju koja će pronaći i ispisati index meteorologa čija je
 procjeni temperatura.
 Pomoć: suma svih razlika između prognozirane i stvarne temperature za jednog meteorologa predstavlja njegovu ukupnu grešku.
 
-U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.*/
+U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
