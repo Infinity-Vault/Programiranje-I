@@ -35,6 +35,8 @@ struct vozilo
     char *tipVozila; //dozvoliti unos samo vrijednosti "A", "B", ili "C"
     int *kubnihCM;
 };```
+
+**
 Redovi dvodimenzionalnog niza predstavljaju različite firme a u kolone različita vozila u tim firmama.
 (radi jednostavnosti rješenja podrazumijevati da svaka firma ima isti broj vozila). 
 Omogućiti korisniku unos svih podataka za sva vozila. 
