@@ -52,3 +52,22 @@ svih vozila tipa "B" u cijeloj matrici
 
 U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. 
 Obavezno koristiti aritmetiku pokazivača.
+
+## [**03](03.cpp)
+Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vozilo (vozilo je struktura čija su obilježja data u nastavku). 
+Omogućiti korisniku da unese dimenzije niza.
+```c++
+struct vozilo
+{
+    char *markaVozila;
+    char *nazivVozila;
+    char *tipVozila; // omogućiti unos samo 'A', 'B','C'
+    float *potrosnja_goriva_po_km;
+};
+```
+Redovi matrice predstavljaju firme, kolone automobile.
+Izračunati u kojoj je firmi najveća potrošnja goriva po km. 
+
+Naći i ispisati prosjek potrošnje goriva po km u vozilima tipa C u cijeloj matrici.
+
+U zadataku koristiti artimetiku pokazivaca.
