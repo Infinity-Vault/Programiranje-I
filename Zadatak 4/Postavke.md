@@ -89,7 +89,7 @@ Zatim napraviti funkciju koja će pronaći i ispisati index meteorologa čija je
 procjeni temperatura.
 Pomoć: suma svih razlika između prognozirane i stvarne temperature za jednog meteorologa predstavlja njegovu ukupnu grešku.
 
-U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
+**(U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
 ## [**05**](05.cpp)
 2D niz na slici predstavlja šahovsku tablu. Napraviti i testirati u main programu slijedeće funkcije:
@@ -99,7 +99,7 @@ b) Funkcija koja će računati aritmetičku sredinu svih brojeva na crnim poljim
 
 Za olaksanje rjesenja, mozete izabrati prototip funkcija po zelji te kreirati dodatne funkcije po potrebi.
 
-(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)
+**(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
 
 ## [**06**](06.cpp)
@@ -119,7 +119,7 @@ Omogućiti korisniku unos svih podataka za sve košarkaše, te napraviti funkcij
 Također je potrebno pronači najuspješnijeg košarkaša u tom timu (ne mora biti najuspješniji u ligi) NASAO; i najlošijeg košarkaša u kompletnoj ligi NASAO te izračunati razliku 
 u broju postignutih koševa ta dva košarkaša. 
 
-**Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.**
+**(Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.)**
 
 
 ## [**07**](07.cpp)
@@ -135,5 +135,6 @@ struct figura
 }
 ```
 Potrebno je napisati funkciju koja će računati prosječnu visinu svih figura koje se nalaze na crnim poljima ispod sporedne dijagonale. 
-Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta vrijednost.
+
+**(Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta vrijednost.)**
 

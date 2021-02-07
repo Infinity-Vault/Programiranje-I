@@ -43,7 +43,7 @@ Done
 
 Napomena: Po želji kreirati dodatne funkcije da se olakša rješavanje zadataka.
 
-Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
+<i>Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.</i>
 
 
 ## [**07**](07.cpp)
@@ -65,5 +65,5 @@ Zatim simulirati unos n slučajnih vrijednosti.
 Simuliranje unosa ostvariti funkcijom rand() % 1000 + 1. 
 Izračunati statističke podatke u kojem procentu se od n generisanih slučajnih vrijednosti pojavljuje prost broj.
 
-Npr.Ako je generisano 10 brojeva(n = 10) : 5, 7, 4, 13, 17, 20, 25, 23, 30, 45, u ovom uzorku od 10 brojeva postoji 5 prostih brojeva pa je procenat prostih brojeva u ovom slučaju 50 % .
+<i>Npr. Ako je generisano 10 brojeva(n = 10) : 5, 7, 4, 13, 17, 20, 25, 23, 30, 45, u ovom uzorku od 10 brojeva postoji 5 prostih brojeva pa je procenat prostih brojeva u ovom slučaju 50 % .</i>
 

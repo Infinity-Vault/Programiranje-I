@@ -74,4 +74,4 @@ ABC = A! + B! + C!</i>
 
 Poštujući sve faze programiranja napisati program koji omogućava unos prirodnog broja n preko tastature te izračunava sumu:
 
-**1/3^2 + 1/5^2 + ... + 1/(2n+1)^2**
+![](https://i.postimg.cc/QdrFTVnN/Screenshot-1.png)
