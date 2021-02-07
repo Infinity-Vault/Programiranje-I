@@ -122,3 +122,18 @@ u broju postignutih koševa ta dva košarkaša.
 **Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.**
 
 
+## [**07**](07.cpp)
+
+Kreirati dvodimenzionalni dinamički niz čiji su elementi objekti tipa figura (figura je struktura čija su obilježja data u nastavku).
+Omogućiti korisniku da unese dimenzije niza, te omogućiti unos elemenata.
+```c++
+struct figura
+{
+    int ID
+    char *nazivFigure;
+    float *visinaFigure;
+}
+```
+Potrebno je napisati funkciju koja će računati prosječnu visinu svih figura koje se nalaze na crnim poljima ispod sporedne dijagonale. 
+Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta vrijednost.
+
