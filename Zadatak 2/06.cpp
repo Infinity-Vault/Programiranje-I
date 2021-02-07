@@ -5,8 +5,11 @@ bool palindrom(int);
 int main()
 {
 	int unos;
-	cout << "Unesite broj : " << endl;
-	cin >> unos;
+	do
+	{
+		cout << "Unesite broj : " << endl;
+		cin >> unos;
+	}while(unos < 100);
 	if (prost(unos) && palindrom(unos))
 		cout << "Uneseni broj je i prost i palindrom." << endl;
 	else
