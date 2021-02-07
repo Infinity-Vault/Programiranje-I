@@ -16,7 +16,7 @@ Redovi dvodimenzionalnog niza predstavljaju različite timove, a kolone predstav
 Omogućiti korisniku unos svih podataka za sve igrače, te napraviti (i testirati u main funkciji) funkciju koja će pronaći tim sa najvećim prosjekom. Zatim napraviti (i testirati u main funkciji) funkciju koja će pronaći igrača sa najviše golova u timu sa najlošijim prosjekom golova. Radi lakšeg testiranja programa obavezno u funkciji unosa podataka omogućiti da se podaci generišu kao sljedeće:
 
 ```c++
-godRodjenja: 1980 + rand() % ((2000 + 1) - 1980) // Generiše brojeve ur angu 1980 - 2000
+godRodjenja: 1980 + rand() % ((2000 + 1) - 1980) // Generiše brojeve u rangu 1980 - 2000
 brojIgraca: rand() % 30 + 1
 golovi: rand() % 5
 ```
@@ -50,8 +50,7 @@ svih vozila tipa "B" u cijeloj matrici
 
 (Pošto se trazi u istoj funkciji, vodite računa o optimizaciji petlji jer to utiče na broj bodova). 
 
-U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. 
-Obavezno koristiti aritmetiku pokazivača.
+**(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
 ## [**03**](03.cpp)
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vozilo (vozilo je struktura čija su obilježja data u nastavku). 
@@ -70,7 +69,7 @@ Izračunati u kojoj je firmi najveća potrošnja goriva po km.
 
 Naći i ispisati prosjek potrošnje goriva po km u vozilima tipa C u cijeloj matrici.
 
-U zadataku koristiti artimetiku pokazivaca.
+**(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
 ## [**04**](04.cpp)
 
@@ -78,11 +77,11 @@ Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vremensk
 Omogućiti korisniku da unese dimenzije niza.
 ```c++
 struct vremenska_prognoza
-{​​
+{
     char *padavine; //dozvoliti unos rijeci npr. "kisa" ili "snijeg"
     float *temperatura;
     float *vlaznost_vazduha;
-}​​
+};
 ```
 Redovi dvodimenzionalnog niza predstavljaju različite meteorologe, a kolone različite dane. Omogućiti korisniku unos svih prognoza za sve meteorologe. 
 Dodatno kreirati jednodimenzionalni dinamički niz čija će veličina biti uneseni broj dana u koji ćete omogućiti unos stvarnih izmjerenih vrijednosti za dane.
@@ -90,4 +89,4 @@ Zatim napraviti funkciju koja će pronaći i ispisati index meteorologa čija je
 procjeni temperatura.
 Pomoć: suma svih razlika između prognozirane i stvarne temperature za jednog meteorologa predstavlja njegovu ukupnu grešku.
 
-U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
+**(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**

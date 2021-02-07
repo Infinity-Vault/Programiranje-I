@@ -23,6 +23,7 @@ Dodatno program treba ispisati razliku unesenog i broja koji se dobije nakon zam
 Napisati program koji će najprije učitati dva prirodna broja n1 i n2 (n2 > n1).
 
 Zatim prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta broja.
+
 U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja
 obavlja zadani posao.
 
@@ -32,10 +33,23 @@ Zatim uneseni broj proslijediti funkciji kao parametar po referenci.
 U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se poredak cifri unesenog broja obrnuti.
 Prilikom obrtanja potrebno je odbaciti neparne cifre.
 
-Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
+<i>Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.</i>
 
 ## [**06**](06.cpp)
 Napisati program koji omogućava korisniku unos integer vrijednosti veće od 100. Napisati 
 funckiju koja će provjeriti da li je uneseni broj u isto vrijeme i prost i "palindrom", 
 odnosno da li je isti broj i kada se obrnnu sve cifre. Po potrebi koristiti dodatne funkcije. 
-Npr. brojevi 383, 727, 757, 787, 797, 919, 929 su u isto vrijeme i prosti brojevi i "palindromi".
+
+<i>Npr. brojevi 383, 727, 757, 787, 797, 919, 929 su u isto vrijeme i prosti brojevi i "palindromi".</i>
+
+## [**07**](07.cpp)
+
+Napisati program koji će omogućiti korisniku unos broja n (uz uslov  10 <= n <= 1000). Zatim simulirati unos n slučajnih vrijednosti.  Simuliranje unosa ostvariti funkcijom rand() % 1000 + 1. Izračunati  statističke podatke u kojem procentu se od n generisanih slučajnih  vrijednosti pojavljuje prost broj.
+
+<i>Npr. Ako je generisano 10 brojeva (n = 10):  5,7,4,13,17,20,25,23,30,45, u ovom uzorku od 10 brojeva postoji 5  prostih brojeva pa je procenat prostih brojeva u ovom slučaju 50%.</i>
+
+**(Napomena: Po želji kreirati dodatne funkcije da se olakša rješavanje zadatka.)**
+
+## [**08**](08.cpp)
+
+Svaki paran broj se može prikazati kao suma dva prosta broja (tkz. Goldbachovo pravilo). Napisati program koji će najprije učitati dva prirodna broja n1 i n2 (n2 > n1). Zatim prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta broja. U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja obavlja zadani posao.

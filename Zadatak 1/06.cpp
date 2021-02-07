@@ -1,35 +1,27 @@
-int napraviB(int);
+int SumaFaktorijela(int);
+int faktorijel(int);
 int main() {
-	int A;
-	int B;
-	do {
-		cout << "Molim vas unesite broj: " << endl;
-		cin >> A;
-		if (A < 100000)
-			cout << "Unijeli ste nedovoljno velik broj!" << endl;
-	} while (A < 100000);
-	B = napraviB(A);
-	cout << "Unesen je broj A: " << A << " dok je njegov ispis naopako bez parnih cifri: " << B << endl;
-	cout << "RAZLIKA BROJEVA: " << "Broj A: " << " " << A << "\t" << "Broj B: " << B << endl;
-
-
-
-
+	int N;
+	cout << "Unesite neki cijeli broj: " << endl;
+	cin >> N;
+	cout << "Suma faktorijela svih neparnih brojeva do unesenog broja je: " << SumaFaktorijela(N) << endl;
 
 	cin.get();
 	return 0;
 }
-int napraviB(int A) {
-	int B = 0;
-	int cifra = 0;
-	while (A > 0) {
-		cifra = A % 10;
-		if (cifra % 2 == 0)
-			A /= 10;
-		else {
-			B = B * 10 + cifra;
-			A /= 10;
-		}
+int SumaFaktorijela(int N) {
+	int suma = 0;
+	for (int i = 1; i < N; i += 2)//Kontrola petlje da se samo krece po neparnim;
+	{
+		suma += faktorijel(i);
 	}
-	return B;
+	return suma;
+}
+int faktorijel(int broj) {
+	int Faktorijel = 1;
+	for (int i = 1; i <= broj; i++)
+	{
+		Faktorijel = Faktorijel * i;
+	}
+	return Faktorijel;
 }
