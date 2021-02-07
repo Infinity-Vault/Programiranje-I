@@ -54,8 +54,8 @@ Poštujući sve faze procesa programiranja, napisati program koji korisniku omog
 te izračunava vrijednost sume faktorijela neparnih brojeva u intervalu [1, N]. Suma faktorijela prikazana je
 sljedećom formulom: S = 1! + 3! + 5! + ... + N!
 
-<<<<<<< HEAD
-##[**08**](08.cpp)
+
+## [**08**](08.cpp)
 Omogučiti unos dva broja X i Y iz intervala od 10 do 5000.
 Kreirati program koji će pronaći i ispisati sve brojeve od X do Y (uključujući granične vrijednosti) za koje važi da je obrnuti broj djeljiv sa
 njegovom sumom cifara.
@@ -64,10 +64,9 @@ Npr. Za broj 144 vrijedi da mu je suma cifara 9 i da je broj koji se dobije nako
 
 Definišite vrijednosti intervala [X, Y]: 11 150
 Brojevi koji ispunjuju dati uslov: 18 20 21 24 27
-=======
+
 ## [**07**](07.cpp)
 
 Napišite program, poštujući sve faze procesa programiranja, koji će  ispisati sve troznamenkaste brojeve koji su jednaki sumi faktorijela  svojih znamenki.
 
-<i>ABC = A! + B! + C!</i>
->>>>>>> b748b30895c9a2e0efe67b292a0ef14c2f473c87
+ABC = A! + B! + C!</i>
