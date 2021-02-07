@@ -91,7 +91,7 @@ Pomoć: suma svih razlika između prognozirane i stvarne temperature za jednog m
 
 U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
 
-##[**05**](05.cpp)
+## [**05**](05.cpp)
 2D niz na slici predstavlja šahovsku tablu. Napraviti i testirati u main programu slijedeće funkcije:
 
 a) Funkcija za unos elemenata tako da se u svako crno polje unese parni broj sa neparnim brojem cifara a u svako bijelo polje unese neparni broj sa parnim brojem cifara. 
