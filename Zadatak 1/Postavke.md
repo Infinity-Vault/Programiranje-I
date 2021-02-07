@@ -58,3 +58,13 @@ Obavezno koristiti bar jednu korisnički definiranu funkciju.
 Poštujući sve faze procesa programiranja, napisati program koji korisniku omogućava unos cijelog broja N, 
 te izračunava vrijednost sume faktorijela neparnih brojeva u intervalu [1, N]. Suma faktorijela prikazana je
 sljedećom formulom: S = 1! + 3! + 5! + ... + N!
+
+##[**08**](08.cpp)
+Omogučiti unos dva broja X i Y iz intervala od 10 do 5000.
+Kreirati program koji će pronaći i ispisati sve brojeve od X do Y (uključujući granične vrijednosti) za koje važi da je obrnuti broj djeljiv sa
+njegovom sumom cifara.
+Za olakšanje rješenja zadataka napraviri funkcije za obrtanje poretka cifara i za sumu cifara.
+Npr. Za broj 144 vrijedi da mu je suma cifara 9 i da je broj koji se dobije nakon što se njegove cifre obrnu 441, djeljiv sa 9.
+
+Definišite vrijednosti intervala [X, Y]: 11 150
+Brojevi koji ispunjuju dati uslov: 18 20 21 24 27

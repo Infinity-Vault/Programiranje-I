@@ -33,3 +33,14 @@ U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se por
 Prilikom obrtanja potrebno je odbaciti neparne cifre.
 
 Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
+
+##[**06**](06.cpp)
+Napisati program koji će omogućiti korisniku unos broja n ( 10 <= n <= 1000).
+Zatim simulirati n bacanja kockice (kockica ima 6 strana i na tim stranicama su brojevi 1-6).
+Done
+Simuliranje bacanja svake kockice ostvariti funkcijom rand() % 6 + 1.
+
+Izračunati statičke podatke u kojem procentu ukupnog bacanja se dobiva svaki od mogućih brojeva 1-6. Obavezno koristiti switch statement za zbrajanje rezultata bacanja kockice.
+Done
+
+Napomena: Po želji kreirati dodatne funkcije da se olakša rješavanje zadataka.
