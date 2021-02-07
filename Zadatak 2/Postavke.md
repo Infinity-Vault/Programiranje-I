@@ -26,7 +26,7 @@ Zatim prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta br
 U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja
 obavlja zadani posao.
 
-##[**05**] (05.cpp)
+##[**05**](05.cpp)
  Napisati program koji omogućava korisniku unos prirodnog broja N (50 < N < 5000000). 
 Zatim uneseni broj proslijediti funkciji kao parametar po referenci.
 U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se poredak cifri unesenog broja obrnuti.
@@ -34,7 +34,7 @@ Prilikom obrtanja potrebno je odbaciti neparne cifre.
 
 Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
 
-##[**06**] (06.cpp)
+##[**06**](06.cpp)
 Napisati program koji omogućava korisniku unos integer vrijednosti veće od 100. Napisati 
 funckiju koja će provjeriti da li je uneseni broj u isto vrijeme i prost i "palindrom", 
 odnosno da li je isti broj i kada se obrnnu sve cifre. Po potrebi koristiti dodatne funkcije. 
