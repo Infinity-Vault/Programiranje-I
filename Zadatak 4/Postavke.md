@@ -101,3 +101,24 @@ Za olaksanje rjesenja, mozete izabrati prototip funkcija po zelji te kreirati do
 
 (U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)
 
+
+## [**06**](06.cpp)
+
+Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa košarkaš (košarkaš je struktura čija su obilježja data u nastavku). 
+Omogućiti korisniku da unese dimenzije niza.
+```c++
+struct kosarkas
+{
+    char *ID;
+    char *imePrezime;
+    int *postignutiKosevi;
+};
+```
+Redovi dvodimenzionalnog niza predstavljaju različite košarkaše a kolone različite klubove.
+Omogućiti korisniku unos svih podataka za sve košarkaše, te napraviti funkciju koja će pronaći najuspješniji klub (klub u kojem je postignut najveći broj koševa).
+Također je potrebno pronači najuspješnijeg košarkaša u tom timu (ne mora biti najuspješniji u ligi) NASAO; i najlošijeg košarkaša u kompletnoj ligi NASAO te izračunati razliku 
+u broju postignutih koševa ta dva košarkaša. 
+
+**Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.**
+
+
