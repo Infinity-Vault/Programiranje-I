@@ -1,27 +1,50 @@
-int SumaFaktorijela(int);
-int faktorijel(int);
-int main() {
-	int N;
-	cout << "Unesite neki cijeli broj: " << endl;
-	cin >> N;
-	cout << "Suma faktorijela svih neparnih brojeva do unesenog broja je: " << SumaFaktorijela(N) << endl;
+﻿#include <iostream>
 
-	cin.get();
+using namespace std;
+
+/*
+ * Napišite program, poštujući sve faze procesa programiranja, koji će ispisati
+ * sve troznamenkaste brojeve koji su jednaki sumi faktorijela svojih znamenki – ABC = A! + B! + C!
+ * Upotrijebite funkcije:
+ */
+
+void ispis();
+int sumaFaktorijelaCifri(int n);
+
+int main()
+{
+	ispis();
+
+	
 	return 0;
 }
-int SumaFaktorijela(int N) {
+
+int sumaFaktorijelaCifri(int n)
+{
 	int suma = 0;
-	for (int i = 1; i < N; i += 2)//Kontrola petlje da se samo krece po neparnim;
+
+	while (n > 0)
 	{
-		suma += faktorijel(i);
+		int temp = n % 10;
+		int faktorijel = 1;
+
+		for (int i = 1; i <= temp; i++)
+		{
+			faktorijel *= i;
+		}
+
+		suma += faktorijel;
+		n /= 10;
 	}
+
 	return suma;
 }
-int faktorijel(int broj) {
-	int Faktorijel = 1;
-	for (int i = 1; i <= broj; i++)
+
+void ispis()
+{
+	for (int i = 100; i <= 999; i++)
 	{
-		Faktorijel = Faktorijel * i;
+		if (i == sumaFaktorijelaCifri(i))
+			cout << i << endl;
 	}
-	return Faktorijel;
 }

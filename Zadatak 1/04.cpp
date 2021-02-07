@@ -1,41 +1,67 @@
-#include <iostream>
-
-using namespace std;
-
-int unos();
-
+int prebroji(int);
+int obrni(int);
+int srednjacifra(int);
+int prva(int);
+int zadnja(int);
 int main() {
-	
-	int sastavljeniBr = 0;
-	int cifra = 0;
-	
+	int broj;
 	do {
-		
-		cifra = unos();
-		
-		if (cifra < 0)//Dodatna provjera da se ne bi sracunao neg broj, jer se uslov gleda na kraju zbog do while;
-			break;
-		
-		if (cifra > 9)
-			cout << "Cifra nije validna" << endl;
-		
-		else {
-			sastavljeniBr = sastavljeniBr * 10 + cifra;
-		}
-		
-	} while (cifra >= 0);
-	
-	cout << "Od unesenih cifri je sastavljen broj: " << sastavljeniBr << endl;
+		cout << "Molim vas unesite prirodan broj: " << endl;
+		cin >> broj;
+	} while (broj < 1);
+	cout << "Uneseni broj je: " << broj << endl;
+	cout << "Cifra obrnuta je: " << obrni(broj) << endl;
+	cout << "Srednja cifra je: " << srednjacifra(broj) << endl;
+	cout << "Prva cifra: " << prva(broj) << endl;
+	cout << "Zadnja cifra: " << zadnja(broj) << endl;
+
+
+
 
 	cin.get();
 	return 0;
 }
-int unos() {
-	
-	int broj;
-	
-	cout << "Unesite broj: " << endl;
-	cin >> broj;
-	
-	return broj;
+int prebroji(int broj) {
+	int brojac = 0;
+	while (broj > 0) {
+		broj /= 10;
+		brojac++;
+
+	}
+	return brojac;
+}
+int obrni(int broj) {
+	int pomocna = 0;
+	while (broj > 0) {
+		pomocna = pomocna * 10 + broj % 10;
+		broj /= 10;
+	}
+	return pomocna;
+}
+int srednjacifra(int broj) {
+	int brojcifri = prebroji(broj);
+	if (brojcifri % 2 == 0) {
+		int pomocna;
+		broj = broj / pow(10.0, (brojcifri / 2 - 1));
+		pomocna = broj % 10;
+		broj /= 10;
+		pomocna += broj % 10;
+		return pomocna / 2;
+
+	}
+	else {
+		broj = broj / pow(10.0, brojcifri / 2);
+		broj = broj % 10;
+		return broj;
+	}
+}
+int prva(int broj) {
+	while (broj >= 10) {//Ako stavimo samo >10 ako je broj sa 10 vratit ce prva cifra 10 sto nije dobro, zato treba >=10!!!
+		broj /= 10;
+	}
+	return broj % 10;//Moze ili ne treba!!!
+	//return broj;
+}
+int zadnja(int broj) {
+	return broj % 10;
 }

@@ -10,6 +10,17 @@ Napisati program koji će omogućiti korisniku da unese veličinu jednodimenzion
 Napisati rekurzivnu funkciju koja će taj niz popuniti serijom brojeva 2, 4, 8, 16, 32, 64, 128, 256, 512, itd., tako da je svaki sljedeći broj jednak prethodnom pomnoženom sa 2,
 počevši od broja 2. Zatim,korisnik unosi željeni broj te rekurzivnom funkcijom provjerava da li je taj broj član kreiranog niza.
 Rekurzija se prekida kada se popuni cijeli niz ili kada se desi overflow na integer varijabli.
-U ovom zadatku je zabranjeno indeksirati niz uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
+
+(**U ovom zadatku je zabranjeno indeksirati niz uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
 ## [**03**](03.cpp)
+
+Napisati program koji će omogućiti korisniku da unese veličinu  jednodimenzionalnog dinamičkog niza integer vrijednosti. Napisati  funkciju koja će taj niz popuniti serijom Fibonacci brojeva počevši od  broja 1. Za pronalazenje elemenata Fibonacci serije obavezno koristiti  rekurzivnu funkciju. Punjenje niza se prekida kada se popuni cijeli niz  ili kada se desi overflow na integer varijabli. 
+
+**(U ovom zadatku je  zabranjeno indeksirati niz uglastim zagradama. Obavezno koristiti  aritmetiku pokazivača.)**
+
+## [**04**](04.cpp)
+
+Napisati program koji će omogućiti korisniku da unese veličinu  jednodimenzionalnog dinamičkog niza integer vrijednosti. Napisati  rekurzivnu funkciju koja će taj niz popuniti faktorijelom rednog broja  člana niza (1!, 2!, 3!, 4!...). Rekurzija se prekida kada se popuni  cijeli niz ili kada se desi overflow na integer varijabli. U ovom  zadatku je zabranjeno indeksirati elemente niza uglastim zagradama.  
+
+**(Obavezno koristiti aritmetiku pokazivača. Obavezno sve riješiti jednom  rekurzivnom funkcijom.)**
