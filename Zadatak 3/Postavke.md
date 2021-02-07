@@ -31,4 +31,4 @@ Napisati rekurzivnu funkciju koja će taj niz popuniti random brojevima u opsegu
 Za generisanje random brojeva koristiti rand() % 100 + 1. Punjenje niza se prekida kada se popuni cijeli niz ili kada se tri puta uzastopno dobije isti random broj.
 U ovom zadatku je zabranjeno indeksirati elemente niza uglastim zagradama. 
 Obavezno koristiti aritmetiku pokazivača.
-** Obavezno sve riješiti jednom rekurzivnom funcijom. **
+**Obavezno sve riješiti jednom rekurzivnom funcijom.**
