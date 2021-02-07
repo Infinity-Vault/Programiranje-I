@@ -33,21 +33,17 @@ Zatim uneseni broj proslijediti funkciji kao parametar po referenci.
 U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se poredak cifri unesenog broja obrnuti.
 Prilikom obrtanja potrebno je odbaciti neparne cifre.
 
-<<<<<<< HEAD
-Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
-
-##[**06**](06.cpp)
+## [**06**](06.cpp)
 Napisati program koji će omogućiti korisniku unos broja n ( 10 <= n <= 1000).
 Zatim simulirati n bacanja kockice (kockica ima 6 strana i na tim stranicama su brojevi 1-6).
-Done
 Simuliranje bacanja svake kockice ostvariti funkcijom rand() % 6 + 1.
 
 Izračunati statičke podatke u kojem procentu ukupnog bacanja se dobiva svaki od mogućih brojeva 1-6. Obavezno koristiti switch statement za zbrajanje rezultata bacanja kockice.
 Done
 
 Napomena: Po želji kreirati dodatne funkcije da se olakša rješavanje zadataka.
-=======
-<i>Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.</i>
+
+Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
 
 ## [**06**](06.cpp)
 Napisati program koji omogućava korisniku unos integer vrijednosti veće od 100. Napisati 
@@ -67,4 +63,4 @@ Napisati program koji će omogućiti korisniku unos broja n (uz uslov  10 <= n <
 ## [**08**](08.cpp)
 
 Svaki paran broj se može prikazati kao suma dva prosta broja (tkz. Goldbachovo pravilo). Napisati program koji će najprije učitati dva prirodna broja n1 i n2 (n2 > n1). Zatim prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta broja. U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja obavlja zadani posao.
->>>>>>> b748b30895c9a2e0efe67b292a0ef14c2f473c87
+
