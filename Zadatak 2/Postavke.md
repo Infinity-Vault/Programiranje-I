@@ -33,3 +33,9 @@ U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se por
 Prilikom obrtanja potrebno je odbaciti neparne cifre.
 
 Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.
+
+##[**06**] (06.cpp)
+Napisati program koji omogućava korisniku unos integer vrijednosti veće od 100. Napisati 
+funckiju koja će provjeriti da li je uneseni broj u isto vrijeme i prost i "palindrom", 
+odnosno da li je isti broj i kada se obrnnu sve cifre. Po potrebi koristiti dodatne funkcije. 
+Npr. brojevi 383, 727, 757, 787, 797, 919, 929 su u isto vrijeme i prosti brojevi i "palindromi".
