@@ -89,7 +89,6 @@ Zatim napraviti funkciju koja će pronaći i ispisati index meteorologa čija je
 procjeni temperatura.
 Pomoć: suma svih razlika između prognozirane i stvarne temperature za jednog meteorologa predstavlja njegovu ukupnu grešku.
 
-<<<<<<< HEAD
 U ovom zadatku je zabranjeno indeksirati elemente u niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.
 
 ##[**05**](05.cpp)
@@ -99,6 +98,6 @@ a) Funkcija za unos elemenata tako da se u svako crno polje unese parni broj sa 
 b) Funkcija koja će računati aritmetičku sredinu svih brojeva na crnim poljima iznad glavne dijagonale.
 
 Za olaksanje rjesenja, mozete izabrati prototip funkcija po zelji te kreirati dodatne funkcije po potrebi.
-=======
-**(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
->>>>>>> b748b30895c9a2e0efe67b292a0ef14c2f473c87
+
+(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)
+
