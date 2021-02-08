@@ -143,3 +143,21 @@ Dat je 2D niz dimenzija 8 x 8.
 Omogućiti korisniku unos cjelobrojnih elemenata 2D niza tako da se u svaki neparni red unesu parni brojevi a svaki parni red neparni broj.
 Napraviti funkciju koja pronalazi kolonu sa najmanjim prosjekom elemenata.
 U istoj funkciji ispisati index pronađene kolone, a u main funkciji sve elemente te kolone.
+
+## [**09**](09.cpp)
+
+Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa uposlenik (uposlenik je struktura čija su obilježja data). 
+Omogućiti korisniku da unese dimenzije niza.
+```c++
+struct uposlenik
+{
+    char *ID;
+    char *imePrezime;
+    float *plata;
+}
+```
+Redovi dvodimenzionalnog niza predstavljaju različite odjele firme u kojima rade različiti radnici (radi jednostavnosti rješenja podrazumijevati da svaki odjel ima isti broj radnika).
+
+Omogućiti korisniku unos svih podataka za sve radnike, te napraviti funkciju koja će naći najveći prosjek plate po odjelima firme te ispisati koji je to redni broj odjela 
+(indeks reda sa najvećim prosjekom) i koji je najveći prosjek plate.
+
