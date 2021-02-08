@@ -80,5 +80,6 @@ Korisnik bira funkciju unosom sljedećih karaktera 's' (sin), 'c' (cos), 'q' (sq
 vrijednosti ispisati odgovarajuću poruku i ponoviti odabir.Za funkciju pow() drugi parametar treba biti 3.
 
 **Za odabranu funkciju sin izraz je: sin(X) + 1+sin(X) + 2+sin(X) + 3+...+ sin(X) + m**
+
 Broj faktora u izrazu odgovara unesenom broju m. U rješenju obavezno iskoristiti switch iskaz.
 
