@@ -137,3 +137,8 @@ struct figura
 Potrebno je napisati funkciju koja će računati prosječnu visinu svih figura koje se nalaze na crnim poljima ispod sporedne dijagonale. 
 Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta vrijednost.
 
+## [**08**](08.cpp)
+Dat je 2D niz dimenzija 8 x 8.
+Omogućiti korisniku unos cjelobrojnih elemenata 2D niza tako da se u svaki neparni red unesu parni brojevi a svaki parni red neparni broj.
+Napraviti funkciju koja pronalazi kolonu sa najmanjim prosjekom elemenata.
+U istoj funkciji ispisati index pronađene kolone, a u main funkciji sve elemente te kolone.
