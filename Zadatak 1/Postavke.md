@@ -70,13 +70,9 @@ Brojevi koji ispunjuju dati uslov: 18 20 21 24 27
 Napišite program, poštujući sve faze procesa programiranja, koji će  ispisati sve troznamenkaste brojeve koji su jednaki sumi faktorijela  svojih znamenki.
 
 ABC = A! + B! + C!</i>
-## [**09**](08.cpp)
-
-Poštujući sve faze programiranja napisati program koji omogućava unos prirodnog broja n preko tastature te izračunava sumu:
-
-**1/3^2 + 1/5^2 + ... + 1/(2n+1)^2**
 
 ## [**10**](10.cpp)
 Poštujući sve faze procesa programiranja, napišite program, koji za uneseni prirodni broj n i realni broj x izračunava:
 
 **S = cos(x) + cos(x^2 + cos(x^3) + ... + cos(x^n))**
+
