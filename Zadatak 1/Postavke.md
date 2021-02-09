@@ -92,3 +92,8 @@ Funkciji pow postavite broj 2 za drugi parametar.
 
 Broj faktora u izrazu odgovara unesenom broju m. 
 U rješenju obavezno iskoristiti switch iskaz.
+
+## [**12**](12.cpp)
+Napisati program koji korisniku omogućava unos cijelog broja n, te izračunava: 
+
+**S = [1/(n + 1)] - [2/((n - 1) + 2!)] + [3/((n - 2) + 3!)] - [4/((n - 3) + 4!)] + ... + (-1)^(n - 1) * [n/(1 + n!)]**
