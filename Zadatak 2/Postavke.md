@@ -109,3 +109,10 @@ Napisati program koji korisniku omogućava unos cijelog broja N, te izračunava 
 Rezultat treba biti zaokružen na dvije decimale.
 
 **Geometrijska sredina n brojeva se računa po formuli: (a1 * a2 * ... an) ^ 1/n**
+
+## [**14**](14.cpp)
+Napisati program koji rješava sljedeći problem.
+Date su firma A, B i C sa godišnjim prihodima: A - prihod 10M eura B - prihod 7M eura C - prihod 5M eura
+sa sljedećim stabilnim fiksnim godišnjim rastom prihoda za koji pretpostavljamo da se neće mijenjati A - 2.05% B - 2.80% C - 4.30% 
+Potrebno je pronaći koja firma će prva prestići firmu A u godišnjem prihodu i za koliko godina će se to desit.
+Također potrebno je ispisati koliko će sve tri firme imati godišnji prihod u toj godini.
