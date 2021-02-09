@@ -104,3 +104,8 @@ Situacija u 12-oj sekundi je:
 Brzina: 117.72
 Predjeni put: 706.32
 ```
+## [**13**](13.cpp)
+Napisati program koji korisniku omogućava unos cijelog broja N, te izračunava geometrijsku sredinu svih neparnih brojeva u intervalu [1, N] koji su djeljivi sa 5. 
+Rezultat treba biti zaokružen na dvije decimale.
+
+**Geometrijska sredina n brojeva se računa po formuli: (a1 * a2 * ... an) ^ 1/n**
