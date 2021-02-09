@@ -21,7 +21,7 @@ int unos() {
 }
 double Geometrijska_sredina(int N) {
 	double GS = 1;
-	int prolaz = 0;
+	float prolaz = 0;//Brojac je tipa float kako bi proracun GS bio tacan!
 	for (int i = 1; i <= N; i += 2)
 	{
 		if (i % 5 == 0) {
@@ -29,5 +29,5 @@ double Geometrijska_sredina(int N) {
 			prolaz++;
 		}
 	}
-	return pow(GS, 1 / float(prolaz));//Posto je brojac 'prolaz' int tipa moramo ga castati u float kako bi dobili realan broj; JAKO BITNO!!!
+	return pow(GS, 1 / prolaz);
 }
