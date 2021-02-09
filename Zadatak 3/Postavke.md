@@ -33,3 +33,11 @@ U ovom zadatku je zabranjeno indeksirati elemente niza uglastim zagradama.
 Obavezno koristiti aritmetiku pokazivača.
 
 **Obavezno sve riješiti jednom rekurzivnom funcijom.**
+
+## [**06**](06.cpp)
+Napisati program koji će generisati Fibonacci niz i smjestiti ga u jednodimenzionalni niz od 20 elemenata.
+(Fibonaccijev niz je niz brojeva koji počinje brojevima 0 i 1, a svaki sljedeći broj u nizu dobije se zbrajanjem prethodna dva: F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2)). 
+Zatim napraviti funkciju koja će sortirati niz uzlazno po srednjoj cifri.
+(Za brojeve sa parnim brojem koristiti aritmeticku sredinu srednje dvije cifre).
+
+**Voditi računa o tipu podatka prilikom računanja srednje cifre.**
