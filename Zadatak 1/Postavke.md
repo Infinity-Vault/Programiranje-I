@@ -80,3 +80,14 @@ Poštujući sve faze programiranja napisati program koji omogućava unos prirodn
 Poštujući sve faze procesa programiranja, napišite program, koji za uneseni prirodni broj n i realni broj x izračunava:
 
 **S = cos(x) + cos(x^2 + cos(x^3) + ... + cos(x^n))**
+
+## [**11**](11.cpp)
+
+Napisati program koji korisniku omogućava unos realnog broja x, cijelog broja m i odabir funkcije za proračun datog izraza.
+Korisnik bira funkciju unosom sljedećih karaktera 's' (sin), 'c' (cos), 'q' (sqrt), 'p' (pow). 
+U slučaju da korisnik unese karakter koji ne odgovara niti jednoj od predefinisanih vrijednosti ispisati odgovarajuću poruku i ponoviti odabir. 
+Funkciji pow postavite broj 2 za drugi parametar.
+
+**Za odabranu funkciju sin izraz je: 1 / (sin(X / 1) + X)+2 / (sin(X / 2) + X)+...+m / (sin(X / m) + X)**
+Broj faktora u izrazu odgovara unesenom broju m. 
+U rješenju obavezno iskoristiti switch iskaz.
