@@ -88,7 +88,9 @@ Korisnik bira funkciju unosom sljedećih karaktera 's' (sin), 'c' (cos), 'q' (sq
 U slučaju da korisnik unese karakter koji ne odgovara niti jednoj od predefinisanih vrijednosti ispisati odgovarajuću poruku i ponoviti odabir. 
 Funkciji pow postavite broj 2 za drugi parametar.
 
-**Za odabranu funkciju sin izraz je: 1 / (sin(X / 1) + X)+2 / (sin(X / 2) + X)+...+m / (sin(X / m) + X)**
+Za odabranu funkciju izraz je:
+
+![](https://i.postimg.cc/6qsmbfGK/Screenshot-2.png)
 
 Broj faktora u izrazu odgovara unesenom broju m. 
 U rješenju obavezno iskoristiti switch iskaz.

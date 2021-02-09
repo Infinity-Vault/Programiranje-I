@@ -32,7 +32,7 @@ Za generisanje random brojeva koristiti rand() % 100 + 1. Punjenje niza se preki
 U ovom zadatku je zabranjeno indeksirati elemente niza uglastim zagradama. 
 Obavezno koristiti aritmetiku pokazivača.
 
-**Obavezno sve riješiti jednom rekurzivnom funcijom.**
+**(Obavezno sve riješiti jednom rekurzivnom funcijom.)**
 
 ## [**06**](06.cpp)
 Napisati program koji će generisati Fibonacci niz i smjestiti ga u jednodimenzionalni niz od 20 elemenata.
@@ -40,4 +40,4 @@ Napisati program koji će generisati Fibonacci niz i smjestiti ga u jednodimenzi
 Zatim napraviti funkciju koja će sortirati niz uzlazno po srednjoj cifri.
 (Za brojeve sa parnim brojem koristiti aritmeticku sredinu srednje dvije cifre).
 
-**Voditi računa o tipu podatka prilikom računanja srednje cifre.**
+**(Voditi računa o tipu podatka prilikom računanja srednje cifre.)**

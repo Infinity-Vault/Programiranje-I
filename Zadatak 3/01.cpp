@@ -3,7 +3,7 @@ using namespace std;
 
 void napuniNiz(int*, int, int brojac = 0);
 void ispisiNiz(int*, int, int brojac = 0);
-long int suma(int*, int, int brojac = 0);
+long long int suma(int*, int, int brojac = 0);
 
 int main() {
 	
@@ -27,6 +27,7 @@ int main() {
 	cin.get();
 	return 0;
  }
+
 void napuniNiz(int* niz, int velicina, int brojac) {
 	
 	if (brojac == velicina)
@@ -51,6 +52,7 @@ void napuniNiz(int* niz, int velicina, int brojac) {
 		napuniNiz(niz, velicina, brojac + 1);
 	}
 }
+
 void ispisiNiz(int* niz, int velicina, int brojac) {
 	
 	if (brojac == velicina)
@@ -60,7 +62,8 @@ void ispisiNiz(int* niz, int velicina, int brojac) {
 	
 	ispisiNiz(niz, velicina, brojac + 1);
 }
-long int suma(int* niz, int velicina, int brojac) {
+
+long long int suma(int* niz, int velicina, int brojac) {
 	
 	if (brojac == velicina)
 		return 0;

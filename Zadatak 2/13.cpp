@@ -2,32 +2,29 @@
 #include <iomanip>
 using namespace std;
 
-int unos();
-double Geometrijska_sredina(int);
 int main() {
-	int N = unos();
-	cout << "Geometrijska sredina svih  neparnih brojeva dijeljivih sa 5  do unesenog " << N << " je: " << setprecision(4) << Geometrijska_sredina(N) << endl;
+	const double godisnjirastA = 2.05,
+		godisnirastB = 2.80,
+		godisnjirastC = 4.30;
+	double firmaA = 10, firmaB = 7, firmaC = 5;
+	int brojGodina = 0;
+	while (firmaB < firmaA || firmaC < firmaA) {
+		firmaA = firmaA + (firmaA * godisnjirastA / 100.0);
+		firmaB = firmaB + (firmaB * godisnirastB / 100.0);
+		firmaC = firmaC + (firmaC * godisnjirastC / 100.0);
+		brojGodina++;
+	}
+	if (firmaB > firmaC)
+		cout << "Firma B je prva prestigla firmu A za " << brojGodina << " godina." << endl;
+	else
+		cout << "Firma C je prva prestigla firmu A za " << brojGodina << " godina." << endl;
+
+	cout << "Godisnji prihod firme A u " << brojGodina << " godini iznosi " << setprecision(2) << firmaA << " M EURA." << endl;
+	cout << "Godisnji prihod firme B u " << brojGodina << " godini iznosi " << setprecision(2) << firmaB << " M EURA." << endl;
+	cout << "Godisnji prihod firme C u " << brojGodina << " godini iznosi " << setprecision(2) << firmaC << " M EURA." << endl;
 
 
 
 	cin.get();
 	return 0;
-}
-int unos() {
-	int N;
-	cout << "Unesite cijeli broj N: " << endl;
-	cin >> N;
-	return N;
-}
-double Geometrijska_sredina(int N) {
-	double GS = 1;
-	float prolaz = 0;//Brojac je tipa float kako bi proracun GS bio tacan!
-	for (int i = 1; i <= N; i += 2)
-	{
-		if (i % 5 == 0) {
-			GS *= i;
-			prolaz++;
-		}
-	}
-	return pow(GS, 1 / prolaz);
 }
