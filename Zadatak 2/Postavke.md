@@ -32,6 +32,7 @@ obavlja zadani posao.)**
 Zatim uneseni broj proslijediti funkciji kao parametar po referenci.
 U funkciji je od unesenog broja potrebno kreirati novi broj teko što će se poredak cifri unesenog broja obrnuti.
 Prilikom obrtanja potrebno je odbaciti neparne cifre.
+
 <i>Npr. Za uneseni broj 1234567 obrnuti broj bez neparnih cifara je 642.</i>
 
 ## [**06**](06.cpp)
