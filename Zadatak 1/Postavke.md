@@ -54,6 +54,12 @@ Poštujući sve faze procesa programiranja, napisati program koji korisniku omog
 te izračunava vrijednost sume faktorijela neparnih brojeva u intervalu [1, N]. Suma faktorijela prikazana je
 sljedećom formulom: S = 1! + 3! + 5! + ... + N!
 
+## [**07**](07.cpp)
+
+Napišite program, poštujući sve faze procesa programiranja, koji će  ispisati sve troznamenkaste brojeve koji su jednaki sumi faktorijela  svojih znamenki.
+
+ABC = A! + B! + C!</i>
+
 
 ## [**08**](08.cpp)
 Omogučiti unos dva broja X i Y iz intervala od 10 do 5000.
@@ -65,12 +71,7 @@ Npr. Za broj 144 vrijedi da mu je suma cifara 9 i da je broj koji se dobije nako
 Definišite vrijednosti intervala [X, Y]: 11 150
 Brojevi koji ispunjuju dati uslov: 18 20 21 24 27
 
-## [**07**](07.cpp)
-
-Napišite program, poštujući sve faze procesa programiranja, koji će  ispisati sve troznamenkaste brojeve koji su jednaki sumi faktorijela  svojih znamenki.
-
-ABC = A! + B! + C!</i>
-## [**09**](08.cpp)
+## [**09**](09.cpp)
 
 Poštujući sve faze programiranja napisati program koji omogućava unos prirodnog broja n preko tastature te izračunava sumu:
 
@@ -88,7 +89,9 @@ Korisnik bira funkciju unosom sljedećih karaktera 's' (sin), 'c' (cos), 'q' (sq
 U slučaju da korisnik unese karakter koji ne odgovara niti jednoj od predefinisanih vrijednosti ispisati odgovarajuću poruku i ponoviti odabir. 
 Funkciji pow postavite broj 2 za drugi parametar.
 
-**Za odabranu funkciju sin izraz je: 1 / (sin(X / 1) + X)+2 / (sin(X / 2) + X)+...+m / (sin(X / m) + X)**
+Za odabranu funkciju izraz je:
+
+![](https://i.postimg.cc/6qsmbfGK/Screenshot-2.png)
 
 Broj faktora u izrazu odgovara unesenom broju m. 
 U rješenju obavezno iskoristiti switch iskaz.

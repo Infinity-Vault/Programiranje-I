@@ -24,8 +24,8 @@ Napisati program koji će najprije učitati dva prirodna broja n1 i n2 (n2 > n1)
 
 Zatim prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta broja.
 
-U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja
-obavlja zadani posao.
+**(U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja
+obavlja zadani posao.)**
 
 ## [**05**](05.cpp)
  Napisati program koji omogućava korisniku unos prirodnog broja N (50 < N < 5000000). 
@@ -79,7 +79,9 @@ Napisati program koji korisniku omogućava unos realnog broja x, cijelog broja m
 Korisnik bira funkciju unosom sljedećih karaktera 's' (sin), 'c' (cos), 'q' (sqrt), 'p' (pow). U slučaju da korisnik unese karakter koji ne odgovara niti jednoj od predefinisanih 
 vrijednosti ispisati odgovarajuću poruku i ponoviti odabir.Za funkciju pow() drugi parametar treba biti 3.
 
-**Za odabranu funkciju sin izraz je: sin(X) + 1+sin(X) + 2+sin(X) + 3+...+ sin(X) + m**
+Za odabranu funkciju izraz je:
+
+![](https://i.postimg.cc/kgVgWn9b/Screenshot-1.png)
 
 Broj faktora u izrazu odgovara unesenom broju m. U rješenju obavezno iskoristiti switch iskaz.
 
@@ -105,19 +107,14 @@ Brzina: 117.72
 Predjeni put: 706.32
 ```
 ## [**13**](13.cpp)
-Napisati program koji korisniku omogućava unos cijelog broja N, te izračunava geometrijsku sredinu svih neparnih brojeva u intervalu [1, N] koji su djeljivi sa 5. 
-Rezultat treba biti zaokružen na dvije decimale.
-
-**Geometrijska sredina n brojeva se računa po formuli: (a1 * a2 * ... an) ^ 1/n**
-
-## [**14**](14.cpp)
 Napisati program koji rješava sljedeći problem.
 Date su firma A, B i C sa godišnjim prihodima: A - prihod 10M eura B - prihod 7M eura C - prihod 5M eura
 sa sljedećim stabilnim fiksnim godišnjim rastom prihoda za koji pretpostavljamo da se neće mijenjati A - 2.05% B - 2.80% C - 4.30% 
 Potrebno je pronaći koja firma će prva prestići firmu A u godišnjem prihodu i za koliko godina će se to desit.
 Također potrebno je ispisati koliko će sve tri firme imati godišnji prihod u toj godini.
 
-## [**15**](15.cpp)
+## [**14**](14.cpp)
 Napisati program koji će omogućiti korisniku unos dva minimalno trocifrena prirodna broja m i n (n > m, m > 100, n < 500). 
 Zatim napraviti funkciju koja će vratiti aritmetičku sredinu svih srednjih cifara svih brojeva u rangu od m do n. 
 Također ta funkcija treba ispisati najveću srednju cifru navedenog ranga.
+
