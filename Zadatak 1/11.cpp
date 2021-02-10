@@ -6,25 +6,30 @@ using namespace std;
 float unosX();
 int unosm();
 float izracunaj_Izraz(float, int);
+
 int main() {
-	int X = unosX();
+	
+	float X = unosX();
 	int m = unosm();
 	cout << "Izraz za unesen parametre iznosi: " << setprecision(3) << izracunaj_Izraz(X, m) << endl;
 	cin.get();
 	return 0;
 }
+
 float unosX() {
 	float X;
 	cout << "Unesite realan broj X: " << endl;
 	cin >> X;
 	return X;
 }
+
 int unosm() {
 	int m;
 	cout << "Unesite cijeli broj m: " << endl;
 	cin >> m;
 	return m;
 }
+
 float izracunaj_Izraz(float X, int m) {
 	float Izraz = 0;
 	char izbor;
