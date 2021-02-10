@@ -30,7 +30,7 @@ int unosN() {
 double Geometrijska_sredina(int N) {
 	
 	double GS = 1.0;
-	int brojac = 1;
+	int brojac = 0;
 	
 	for (int i = 1; i <=N; i+=2)
 	{
