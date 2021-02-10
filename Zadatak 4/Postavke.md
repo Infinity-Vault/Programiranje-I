@@ -116,7 +116,7 @@ struct kosarkas
 ```
 Redovi dvodimenzionalnog niza predstavljaju različite košarkaše a kolone različite klubove.
 Omogućiti korisniku unos svih podataka za sve košarkaše, te napraviti funkciju koja će pronaći najuspješniji klub (klub u kojem je postignut najveći broj koševa).
-Također je potrebno pronači najuspješnijeg košarkaša u tom timu (ne mora biti najuspješniji u ligi) NASAO; i najlošijeg košarkaša u kompletnoj ligi NASAO te izračunati razliku 
+Također je potrebno pronači najuspješnijeg košarkaša u tom timu (ne mora biti najuspješniji u ligi)  i najlošijeg košarkaša u kompletnoj ligi te izračunati razliku 
 u broju postignutih koševa ta dva košarkaša. 
 
 **(Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.)**
