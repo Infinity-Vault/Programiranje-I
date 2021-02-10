@@ -122,6 +122,7 @@ void NajboljiFax(student** niz, int univerzalno)
     int najveci = 0;
     for (int i = 0; i < univerzalno; i++)//krece po redovima jer broj redova je broj koji ima i pomocni niz
     {
+        // npr.
         // pomocni [2,55,7,4]
         //indeks   [0, 1,2,3]
         if (*(pomocni + najveci) < *(pomocni + i))
