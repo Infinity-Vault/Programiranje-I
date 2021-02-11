@@ -1,6 +1,6 @@
 int fibonacci(int);
 void punjenjeNiza(int*, int, int brojac = 0);
-void provjera(int*, int, int, int brojac = 0);
+bool provjera(int*, int, int, int brojac = 0);
 int main() {
 	//Kreiranje jednodim dinamickog niza:
 	int velicina;
@@ -17,7 +17,10 @@ int main() {
 	int izbor;
 	cout << "Molim vas unesite broj za koji zelite znati da li ga ima u nizu: " << endl;
 	cin >> izbor;
-	provjera(niz, velicina, izbor);
+	if (provjera(niz, velicina, izbor))
+		cout << "Element " << izbor << " je nadjen u nizu!" << endl;
+	else
+		cout << "Element " << izbor << " nije  nadjen u nizu!" << endl;
 
 
 	delete[]niz;
@@ -49,18 +52,12 @@ void punjenjeNiza(int* niz, int velicina, int brojac) {
 		punjenjeNiza(niz, velicina, brojac + 1);
 	}
 }
-void provjera(int* niz, int velicina, int izbor, int brojac) {
-	if (brojac == velicina)//Bazni slucaj;
-		return;
+bool provjera(int* niz, int velicina, int izbor, int brojac) {
+	if (brojac == velicina)
+		return 0;
 	if (brojac < velicina) {
-		if (brojac == 0 && *(niz + brojac) == izbor)
-			cout << "Nadjen je element na indeksu: " << brojac << endl;
-		else if (brojac == 1 && *(niz + brojac) == izbor)
-			cout << "Nadjen je element na indeksu: " << brojac << endl;
-		else if (*(niz + brojac) == izbor)
-			cout << "Nadjen je element na indeksu: " << brojac << endl;
+		if (*(niz + brojac) == izbor)
+			return true;
 		provjera(niz, velicina, izbor, brojac + 1);
 	}
-
-
 }

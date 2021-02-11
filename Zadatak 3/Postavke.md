@@ -41,3 +41,7 @@ Zatim napraviti funkciju koja će sortirati niz uzlazno po srednjoj cifri.
 (Za brojeve sa parnim brojem koristiti aritmeticku sredinu srednje dvije cifre).
 
 **(Voditi računa o tipu podatka prilikom računanja srednje cifre.)**
+
+## [**07**](07.cpp)
+Kreirati jednodim dinam niz n velicine i napuniti ga serijom kubova svakog proslog broja pocevsi od 2. Prekida se kada se deesi overflow, napuni niz.Ispisati niz rekurzivno!
+**Koristiti aritmetiku pointera!**
