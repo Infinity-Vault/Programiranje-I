@@ -117,3 +117,7 @@ Napisati program koji će omogućiti korisniku unos dva minimalno trocifrena pri
 Zatim napraviti funkciju koja će vratiti aritmetičku sredinu svih srednjih cifara svih brojeva u rangu od m do n. 
 Također ta funkcija treba ispisati najveću srednju cifru navedenog ranga.
 
+## [**15**](15.cpp)
+Napišite program u kojem ćete omogućiti unos dva prirodna broja manja od 500 koji predstavljaju granice intervala, te pronaći i ispisati kojom 
+cifrom/znamenkom završava umnožak svih prostih brojeva u zadanom intervalu uključujući granične vrijednosti.
+
