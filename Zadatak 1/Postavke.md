@@ -16,7 +16,9 @@ Geometrijska sredina n brojeva se računa po formuli:
 
 ## [**03**](03.cpp)
 
-Napisati program u kojem je potrebno unijeti odabrani broj cifara počevši od cifre najveće težinske vrijednosti, pa od njih sastaviti i napisati prirodni broj. Unos cifara se prekida kada se unese broj manji od 0, ukoliko korisnik unese cifru veću od 9, ispisati poruku da cifra nije validna, ali se unos ne prekida. **(Obavezno koristiti barem jednu korisnički definisanu funkciju)**
+Napisati program u kojem je potrebno unijeti odabrani broj cifara počevši od cifre najveće težinske vrijednosti, pa od njih sastaviti i napisati prirodni broj. Unos cifara se prekida kada se unese broj manji od 0, ukoliko korisnik unese cifru veću od 9, ispisati poruku da cifra nije validna, ali se unos ne prekida. 
+
+**(Obavezno koristiti barem jednu korisnički definisanu funkciju)**
 
 Ispis neka bude oblika:
 
@@ -58,7 +60,7 @@ sljedećom formulom: S = 1! + 3! + 5! + ... + N!
 
 Napišite program, poštujući sve faze procesa programiranja, koji će  ispisati sve troznamenkaste brojeve koji su jednaki sumi faktorijela  svojih znamenki.
 
-ABC = A! + B! + C!</i>
+**ABC = A! + B! + C!**
 
 
 ## [**08**](08.cpp)
@@ -68,8 +70,8 @@ njegovom sumom cifara.
 Za olakšanje rješenja zadataka napraviri funkcije za obrtanje poretka cifara i za sumu cifara.
 Npr. Za broj 144 vrijedi da mu je suma cifara 9 i da je broj koji se dobije nakon što se njegove cifre obrnu 441, djeljiv sa 9.
 
-Definišite vrijednosti intervala [X, Y]: 11 150
-Brojevi koji ispunjuju dati uslov: 18 20 21 24 27
+**Definišite vrijednosti intervala [X, Y]: 11 150**
+**Brojevi koji ispunjuju dati uslov: 18 20 21 24 27**
 
 ## [**09**](09.cpp)
 
@@ -93,8 +95,8 @@ Za odabranu funkciju izraz je:
 
 ![](https://i.postimg.cc/6qsmbfGK/Screenshot-2.png)
 
-Broj faktora u izrazu odgovara unesenom broju m. 
-U rješenju obavezno iskoristiti switch iskaz.
+**Broj faktora u izrazu odgovara unesenom broju m.** 
+**U rješenju obavezno iskoristiti switch iskaz.**
 
 ## [**12**](12.cpp)
 Napisati program koji korisniku omogućava unos cijelog broja n, te izračunava: 
@@ -112,5 +114,5 @@ Za odabir funkcije s izraz je:
 Za odabir funkcije o izraz je: 
 **f(x, m) = (x - 1) * 1 - (x - 2) * 2 - ... - (x - m) * m itd.**
 
-Broj faktora u izrazu odgovara unesenom broju m.
-U rješenju obavezno iskoristiti switch iskaz.
+**Broj faktora u izrazu odgovara unesenom broju m.**
+**U rješenju obavezno iskoristiti switch iskaz.**
