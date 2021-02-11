@@ -146,3 +146,23 @@ U glavnom programu je potrebno ispisati aritmetičku sredinu.
 
 **Složeni broj je svaki broj koji nije prosti, odnosno koji ima bar jednog djelioca osim broja 1 i samog sebe.**
 
+## [**19**](19.cpp)
+
+Napisati program koji će uzastopno učitavati cijele brojeve m i n (1 <= m <= 50, 1 <= n <= 500) i pronalaziti srednju cifru njihovog proizvoda/umnoška.
+Program treba ispisivati srednju cifru samo ako je veća od prethodno izračunate srednje cifre. Prva pronađena srednja cifra se svakako ispisuje.
+Program se forsirano prekida ako korisnik unese n = 0. 
+Program se prirodno završava ako je pronađena srednja cifra 9.
+Primjer izvršenja:
+```c++
+unesi m i n: 10, 15
+srednja cifra/sredina proizvoda brojeva 10 i 15 (10 * 15 = 150) je: 5
+unesi m i n: 10, 42
+srednja cifra/sredina proizvoda brojeva 10 i 42 (10 * 42 = 420) je: ne ispisuje se
+unesi m i n: 12, 31
+srednja cifra/sredina proizvoda brojeva 12 i 31 (12 * 31 = 372) je: 7
+unesi m i n: 149, 20
+srednja cifra/sredina proizvoda brojeva 149 i 20 (149 * 20 = 2980) je: 8.5
+unesi m i n: 150, 0
+forsirani prekid...
+```
+
