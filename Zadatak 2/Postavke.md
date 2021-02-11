@@ -121,3 +121,7 @@ Također ta funkcija treba ispisati najveću srednju cifru navedenog ranga.
 Napišite program u kojem ćete omogućiti unos dva prirodna broja manja od 500 koji predstavljaju granice intervala, te pronaći i ispisati kojom 
 cifrom/znamenkom završava umnožak svih prostih brojeva u zadanom intervalu uključujući granične vrijednosti.
 
+## [**16**](16.cpp)
+Napišite program, u kojem ćete omogućiti unos dva prirodna broja manja od 500 koji predstavljaju granice intervala, te pronaći i ispisati kojom znamenkom 
+završava najveći prosti broj u zadanom intervalu ne uključujući granične vrijednosti.
+
