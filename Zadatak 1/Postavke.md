@@ -116,3 +116,13 @@ Za odabir funkcije o izraz je:
 
 **Broj faktora u izrazu odgovara unesenom broju m.**
 **U rješenju obavezno iskoristiti switch iskaz.**
+
+[**14**](14.cpp)
+
+Postujuci sve faze procesa programiranja napisati program koji ce pronaci i ispisati  sve brojeve  od X do Y ( ukljucujuci granicne vrijednosti) koji su djeljivi svim svojim ciframa. 
+
+**Na primjer, broj 36 je djeljiv svim svojim ciframa (36/6=6 i 36/3=12).**
+
+Brojeve X i Y unosi korisnik  i oni moraju biti u opsegu od 10 do 6000.
+
+**Obavezno koristiti bar jednu  funkciju.**
