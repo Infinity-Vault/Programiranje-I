@@ -1,5 +1,6 @@
-#include <iostream>
+﻿#include <iostream>
 #include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -9,30 +10,35 @@ struct fudbaler {
 	int* brojIgraca;
 	int* golovi;
 	
-	//Konstruktor:
+	//Konstruktor: (Inicijalizira pointere strukture kao dinamicke varijable pri stvaranju objekta)
 	fudbaler() {
 		godRodjenja = new int;
 		brojIgraca = new int;
 		golovi = new int;
 	}
 	
-	//Destruktor:
+	//Destruktor: (Dealocira sve dinamicki-alocirane varijable objekta i postavlja pointere na nullptr)
 	~fudbaler() {
 		delete godRodjenja;
 		godRodjenja = nullptr;
+		
 		delete brojIgraca;
 		brojIgraca = nullptr;
+		
 		delete golovi;
 		golovi = nullptr;
 	}
 };
+
 //Deklaracije fija:
 void unos(fudbaler**, int, int);
 void ispis(fudbaler**, int, int);
 void tim_sa_najvecim_Prosjekom(fudbaler**, int, int);
 void igrac_sa_najvise_Golova(fudbaler**, int, int);
 
+//Niz se mora proslijediti po referenci kako bi se fudbaler** mogao postaviti na nullptr
 void dealokacijaNiza(fudbaler**&, int);
+
 int main() {
 	
 	srand((time(0)));
@@ -42,7 +48,8 @@ int main() {
 	cin >> red;
 	cout << "Unesite koliko kolona zelite: " << endl;
 	cin >> kolona;
-	
+
+	// Kreiranje dinamicke 2D matrice
 	fudbaler** niz = new fudbaler * [red];
 	for (int i = 0; i < red; i++)
 	{
@@ -57,12 +64,14 @@ int main() {
 	
 	//Dealokacija:
 	dealokacijaNiza(niz, red);
+	
 	cin.get();
 	return 0;
 }
-//Definicije fija: 
+
 void unos(fudbaler** niz, int red, int kolona) {
-	
+
+	// Ovdje dajemo random vrijednosti obiljezjima objekata prema postavci zadatka
 	for (int i = 0; i < red; i++)
 	{
 		for (int j = 0; j < kolona; j++)
@@ -73,6 +82,7 @@ void unos(fudbaler** niz, int red, int kolona) {
 		}
 	}
 }
+
 void ispis(fudbaler** niz, int red, int kolona) {
 	
 	cout << endl;
@@ -87,8 +97,12 @@ void ispis(fudbaler** niz, int red, int kolona) {
 		cout << endl;
 	}
 }
+
 void tim_sa_najvecim_Prosjekom(fudbaler** niz, int red, int kolona) {
-	
+
+	// Privremeni float niz inicijaliziran sa 0
+	// {} - Inicijalizacija 0
+	// U njega pohranjujemo prosjek svakog reda 
 	float* najboljiTim = new float[red] {};
 	
 	for (int i = 0; i < red; i++)
@@ -99,7 +113,8 @@ void tim_sa_najvecim_Prosjekom(fudbaler** niz, int red, int kolona) {
 		}
 		*(najboljiTim + i) /= kolona;
 	}
-	
+
+	// Ovdje kompariramo svaki element najboljiTim kako bi pronasli red sa najvecim prosjekom
 	int indeksTima = 0;
 	
 	for (int i = 0; i < red; i++)
@@ -117,9 +132,15 @@ void tim_sa_najvecim_Prosjekom(fudbaler** niz, int red, int kolona) {
 		cout << "Broj igraca je: " << *(*(niz + indeksTima) + j)->brojIgraca << "\t";
 		cout << "Broj golova igraca je: " << *(*(niz + indeksTima) + j)->golovi << endl;
 	}
+
+	cout << endl;
+
+	// Dealociramo niz najboljiTim
+	delete[] najboljiTim;
 }
 void igrac_sa_najvise_Golova(fudbaler** niz, int red, int kolona) {
-	
+
+	// Opet imamo privremeni niz, inicijaliziran sa 0, koji će pohraniti prosjeke svakog reda
 	float* najgoriTim = new float[red] {};
 	
 	for (int i = 0; i < red; i++)
@@ -130,7 +151,8 @@ void igrac_sa_najvise_Golova(fudbaler** niz, int red, int kolona) {
 		}
 		*(najgoriTim + i) /= kolona;
 	}
-	
+
+	// Kompariramo elemente najgoriTim da bi pronasli red sa najmanjim prosjekom
 	int indeksTima = 0;
 	
 	for (int i = 0; i < red; i++)
@@ -139,7 +161,8 @@ void igrac_sa_najvise_Golova(fudbaler** niz, int red, int kolona) {
 			indeksTima = i;
 		}
 	}
-	
+
+	// Sada prolazimo kroz kolone reda sa najlosijim prosjekom kako bi pronasli kolonu sa vise golova
 	int najboljiFudbaler = *(*(niz + indeksTima) + 0)->golovi;
 	int indeksj = 0;
 	
@@ -151,15 +174,21 @@ void igrac_sa_najvise_Golova(fudbaler** niz, int red, int kolona) {
 		}
 	}
 	
-	cout << "Najbolji fudbaler u najgorem timu je rodjen : " << *(*(niz + indeksTima) + indeksj)->godRodjenja<<" i ima golova: "<< *(*(niz + indeksTima) + indeksj)->golovi;
+	cout << "Najbolji fudbaler u najgorem timu je rodjen : " << *(*(niz + indeksTima) + indeksj)->godRodjenja << " i ima golova: " << *(*(niz + indeksTima) + indeksj)->golovi << endl;
+
+	// Dealociramo najgori tim
+	delete[] najgoriTim;
 }
 
 void dealokacijaNiza(fudbaler**& niz, int red) {
+
+	// Dealociramo svaki 1D niz objekata
 	for (int i = 0; i < red; i++)
 	{
 		delete[] * (niz + i);
-		*(niz + i) = nullptr;
 	}
+
+	// Dealociramo niz pointera na koje pointuje fudbaler** i nullpointujemo fudbaler**
 	delete[] niz;
 	niz = nullptr;
 }

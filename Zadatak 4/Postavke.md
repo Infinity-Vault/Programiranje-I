@@ -94,8 +94,8 @@ Pomoć: suma svih razlika između prognozirane i stvarne temperature za jednog m
 ## [**05**](05.cpp)
 2D niz na slici predstavlja šahovsku tablu. Napraviti i testirati u main programu slijedeće funkcije:
 
-a) Funkcija za unos elemenata tako da se u svako crno polje unese parni broj sa neparnim brojem cifara a u svako bijelo polje unese neparni broj sa parnim brojem cifara. 
-b) Funkcija koja će računati aritmetičku sredinu svih brojeva na crnim poljima iznad glavne dijagonale.
+1. Funkcija za unos elemenata tako da se u svako crno polje unese parni broj sa neparnim brojem cifara a u svako bijelo polje unese neparni broj sa parnim brojem cifara. 
+2. Funkcija koja će računati aritmetičku sredinu svih brojeva na crnim poljima iznad glavne dijagonale.
 
 Za olaksanje rjesenja, mozete izabrati prototip funkcija po zelji te kreirati dodatne funkcije po potrebi.
 
@@ -116,8 +116,7 @@ struct kosarkas
 ```
 Redovi dvodimenzionalnog niza predstavljaju različite košarkaše a kolone različite klubove.
 Omogućiti korisniku unos svih podataka za sve košarkaše, te napraviti funkciju koja će pronaći najuspješniji klub (klub u kojem je postignut najveći broj koševa).
-Također je potrebno pronači najuspješnijeg košarkaša u tom timu (ne mora biti najuspješniji u ligi)  i najlošijeg košarkaša u kompletnoj ligi te izračunati razliku 
-u broju postignutih koševa ta dva košarkaša. 
+Također je potrebno pronači najuspješnijeg košarkaša u tom timu (ne mora biti najuspješniji u ligi)  i najlošijeg košarkaša u kompletnoj ligi te izračunati razliku u broju postignutih koševa ta dva košarkaša. 
 
 **(Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.)**
 
