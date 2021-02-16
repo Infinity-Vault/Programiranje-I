@@ -36,7 +36,7 @@ int napraviB(int A) {
 		
 		cifra = A % 10;
 		
-		if (cifra % 2 == 0) {
+		if (cifra % 2 == 0) {   // Ako je cifra parna, odbacuje se(preskace se dio spajanja u broj B i ide se direktno na iduci korak.)
 			A /= 10;
 		}
 		
