@@ -34,7 +34,7 @@ int Zamjeni(int n) {
 		cifra = n % 10;
 		
 		if (cifra % 2 == 0) {
-			noviBr = noviBr + 5 * pow(10.0, brojac);
+			noviBr = noviBr + 5 * pow(10.0, brojac); // Ako je cifra parna mijenja se u 5.
 			brojac++;
 			n /= 10;
 		}
