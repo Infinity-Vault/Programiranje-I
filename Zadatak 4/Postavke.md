@@ -1,4 +1,4 @@
-## [**01**](01.cpp)
+## [**01 (Ispitni)**](01.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa fudbaler (fudbaler je struktura čija su obilježja data u nastavku). Omogućiti korisniku da unese dimenzije niza.
 
@@ -23,7 +23,7 @@ golovi: rand() % 5
 
 **(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
-## [**02**](02.cpp)
+## [**02 (Ispitni)**](02.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vozilo (vozilo je struktura čija su obilježja data u nastavku).
 Omogućiti korisniku da unese dimenzije niza.
@@ -52,7 +52,7 @@ svih vozila tipa "B" u cijeloj matrici
 
 **(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
-## [**03**](03.cpp)
+## [**03 (Ispitni)**](03.cpp)
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vozilo (vozilo je struktura čija su obilježja data u nastavku). 
 Omogućiti korisniku da unese dimenzije niza.
 ```c++
@@ -71,7 +71,7 @@ Naći i ispisati prosjek potrošnje goriva po km u vozilima tipa C u cijeloj mat
 
 **(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
-## [**04**](04.cpp)
+## [**04 (Ispitni)**](04.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa vremenska_prognoza (prognoza je struktura čija su obilježja data u nastavku).
 Omogućiti korisniku da unese dimenzije niza.
@@ -102,7 +102,7 @@ Za olaksanje rjesenja, mozete izabrati prototip funkcija po zelji te kreirati do
 **(U ovom zadatku je zabranjeno indexirati elemente niza uglastim zagradama. Obavezno koristiti aritmetiku pokazivača.)**
 
 
-## [**06**](06.cpp)
+## [**06 (Ispitni)**](06.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa košarkaš (košarkaš je struktura čija su obilježja data u nastavku). 
 Omogućiti korisniku da unese dimenzije niza.
@@ -122,7 +122,7 @@ u broju postignutih koševa ta dva košarkaša.
 **(Funkcija treba vratiti pokazivač na memorijsku lokaciju u kojoj je upisana ta razlika.)**
 
 
-## [**07**](07.cpp)
+## [**07 (Ispitni)**](07.cpp)
 
 Kreirati dvodimenzionalni dinamički niz čiji su elementi objekti tipa figura (figura je struktura čija su obilježja data u nastavku).
 Omogućiti korisniku da unese dimenzije niza, te omogućiti unos elemenata.
@@ -164,7 +164,7 @@ Omogućiti korisniku unos cjelobrojnih elemenata 2D niza tako da se u svaki nepa
 Napraviti funkciju koja pronalazi kolonu sa najmanjim prosjekom elemenata.
 U istoj funkciji ispisati index pronađene kolone, a u main funkciji sve elemente te kolone.
 
-## [**09**](09.cpp)
+## [**09 (Ispitni)**](09.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa uposlenik (uposlenik je struktura čija su obilježja data). 
 Omogućiti korisniku da unese dimenzije niza.
@@ -216,7 +216,7 @@ U main() funkciji napisati testni program koji će omogućiti izvršenje svih fu
 Pomoć: Broj je simpatičan ukoliko je zbir cifara njegovog kvadrata jednak kvadratu zbira njegovih cifara. Broj 21 je simpatičan jer je s(441) = s(21) * s(21) pri čemu je s(n) zbir cifara
 prirodnog broja n.
 
-## [**14**](14.cpp)
+## [**14 (Ispitni)**](14.cpp)
 
 Kreirati dinamički dvodimenzionalni niz čiji su elementi objekti tipa student (student je struktura čija su obilježja data u nastavku). Omogućiti korisniku da unese dimenzije niza.
 ```c++
