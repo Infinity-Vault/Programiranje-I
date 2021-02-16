@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
-const int x = 10, y = 10;
-int niz[x][y];
+const int x = 10, y = 10; //deklarisemo konstante matrice koja ima 10 redova (x) i 10 kolona (y)
+int niz[x][y]; //pravimo matricu
 
 
-void unos(int[][y]);
-void ispis(int[][y]);
-void obrni(int[][y]);
+void unos(int[][y]); //funkcija za unos elemenata u matricu
+void ispis(int[][y]); //funkcija za ispis elemenata matrice
+void obrni(int[][y]); //funkcija koja mjenja sadrzaj redova i kolona jedno sa drugim
 void Aritmeticka_sredina_nacrnim_Poljima(int[][y]);
 int main() {
 
@@ -38,7 +38,7 @@ void unos(int niz[][y]) {
 	}*/
 
 	//Drugi nacin:
-	bool overflow = false;
+	bool overflow = false; //sa ovom varijablom provjeravamo da li je doslo do overflowa
 	int eksponent = 0;//Svaki broj na 0 je 1!
 	for (int i = 0; i < x; i++)
 	{
@@ -46,13 +46,13 @@ void unos(int niz[][y]) {
 		{
 			niz[i][j] = pow(2, eksponent);
 			eksponent++;
-			if (niz[i][j] < 0) {
+			if (niz[i][j] < 0) { //ako je doslo do owerflowa onda ce trenutni element niza otici u minus jer je to najmanja moguca vrijednost kod intidzera i to gledamo da lis e je desilo
 				//return;
-				niz[i][j] = 0;
+				niz[i][j] = 0; //ako se to desava onda nek se trenutni clan na kojem je bio owerflow vrati na 0
 				overflow = true;
 			}
 		}
-		if (overflow)
+		if (overflow) //ako je ovo ispunjeno nek se izade iz for petlje
 			break;
 	}
 }
@@ -81,7 +81,7 @@ void obrni(int niz[][y]) {
 	}
 }
 void Aritmeticka_sredina_nacrnim_Poljima(int niz[][y]) {
-	double Average = 0;
+	long double Average = 0;
 	int brojacProlaza = 0;
 	for (int i = 0; i < x; i++)
 	{
