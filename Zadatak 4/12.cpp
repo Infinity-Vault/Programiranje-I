@@ -134,7 +134,7 @@ void prosjeci_bijelih_crnih(int** niz, int red, int kolona) {
 	 \	*	*	*	*
 	 *	\	*	*	*
 	 *	*	\	*	*
-	 *  *	*	\	*
+	 * 	*	*	\	*
 	 *	*	*	*	\
 	 
 
