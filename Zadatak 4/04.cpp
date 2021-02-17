@@ -27,7 +27,7 @@ struct vremenska_prognoza {
     }
 };
 
-//Deklarisanje funckija:
+//Deklarisanje fukcija:
 void unosElemenata(vremenska_prognoza**, int, int);
 void ispisElemenata(vremenska_prognoza**, int, int);
 void dealokacija_niza(vremenska_prognoza**&, int);
@@ -110,7 +110,7 @@ void ispisElemenata(vremenska_prognoza** niz2D, int redovi, int kolone) {
     {
         for (int j = 0; j < kolone; j++)
         {
-            cout << "Unesena padavina je: " << ((*(niz2D + i) + j)->padavine) << endl; //Pointer na char niz se ne dereferencira prilikom ispisa;
+            cout << "Unesena padavina je: " << ((*(niz2D + i) + j)->padavine) << endl; //Pointer na char niz se ne dereferencira prilikom ispisa;Nije potrebna * za dereferenciranje!
             cout << "Unesena temperatura je: " << *((*(niz2D + i) + j)->temperatura) << endl;
             cout << "Unesena vlaznost zraka je: " << *((*(niz2D + i) + j)->vlaznost_zraka) << endl;
         }
@@ -157,7 +157,7 @@ int najtacniji_Meteorolog(vremenska_prognoza** niz2D, vremenska_prognoza* niz, i
         }
     }
 
-	// Dealokacija pomocni niza
+	// Dealokacija pomocni niza, izvrsava se prije return statement-a kako bi se zaista izvrsila a ne samo bila ignorirana.
     delete[] pomocni;
 	
     return minError;
