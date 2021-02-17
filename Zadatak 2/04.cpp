@@ -28,7 +28,7 @@ int main()
 		cin >> n1;
 		cout << "Unesite n2: ";
 		cin >> n2;
-	} while (n1 == n2);					// n1 i n2 ne smiju biti jednaki.
+	} while (n1 == n2 || n1>n2);					// n1 i n2 ne smiju biti jednaki, niti n1 smije biti veci od n2.
 
 	if (n1 % 2 != 0)
 		n1++;			// Zbog iduce for petlje trebamo poceti sa parnim brojem, inace ce petlja ici kroz neparne brojeve, u slucaju da je n1 neparan, u ovoj liniji koda se n1 povecava za 1, sto ga cini parnim.
