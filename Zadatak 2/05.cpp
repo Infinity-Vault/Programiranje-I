@@ -6,7 +6,7 @@ void promjena(int& N) {
 	int ostatak = 0;
 	while (N > 0) {
 		ostatak = N % 10;
-		if (ostatak % 2 != 0) {
+		if (ostatak % 2 != 0) {		// Ako je cifra neparna, odbacuje se.
 			N /= 10;
 		}
 		else {
