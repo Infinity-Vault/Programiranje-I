@@ -50,7 +50,7 @@ int main() {
     cout << "Molim vas unesite kolone: " << endl;
     cin >> kolona;
 
-    //Deklar matrice:
+    //Deklaracija  matrice:
     vozilo** niz = new vozilo * [red];
     for (int i = 0; i < red; i++)
     {
@@ -161,7 +161,7 @@ int najveca_Kubikaza(vozilo** niz, int red, int kolona) {
         }
     }
 	
-    // Dealokacija pomocni i to prije return statement
+    // Dealokacija pomocni i to prije return statement, kako bi se zapravo dealokacija izvrsila!
     delete[]pomocni;
     pomocni = nullptr;
 	
@@ -190,7 +190,7 @@ void prosjecna_Kubikaza(vozilo** niz, int red, int kolona) {
         }
     }
     // Racunamo prosjek nekog tipa tako što podijelimo ukupnu kubikazu svih vozila tog tipa sa brojem vozila
-    if (A != 0) {
+    if (A != 0) {//Provjera brojaca jer se ne moze dijeliti sa nulom!
         prosjek_A /= A;
     }
 	
