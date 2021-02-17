@@ -1,72 +1,30 @@
-#include<iostream>
-#include<cmath>
+#include <iostream>
 #include <iomanip>
 using namespace std;
 
-float unosX();
-int  unosm();
-float proracun_Izraza(float, int);
 int main() {
-	float X = unosX();
-	int m = unosm();
-	cout << "Izraz za unesene parametre iznosi: " << proracun_Izraza(X, m) << endl;
+	const double godisnjirastA = 2.05,
+		godisnirastB = 2.80,
+		godisnjirastC = 4.30;
+	double firmaA = 10, firmaB = 7, firmaC = 5;
+	int brojGodina = 0;
+	while (firmaB < firmaA || firmaC < firmaA) {
+		firmaA = firmaA + (firmaA * godisnjirastA / 100.0);
+		firmaB = firmaB + (firmaB * godisnirastB / 100.0);
+		firmaC = firmaC + (firmaC * godisnjirastC / 100.0);
+		brojGodina++;
+	}
+	if (firmaB > firmaC)
+		cout << "Firma B je prva prestigla firmu A za " << brojGodina << " godina." << endl;
+	else
+		cout << "Firma C je prva prestigla firmu A za " << brojGodina << " godina." << endl;
+
+	cout << "Godisnji prihod firme A u " << brojGodina << " godini iznosi " << setprecision(2) << firmaA << " M EURA." << endl;
+	cout << "Godisnji prihod firme B u " << brojGodina << " godini iznosi " << setprecision(2) << firmaB << " M EURA." << endl;
+	cout << "Godisnji prihod firme C u " << brojGodina << " godini iznosi " << setprecision(2) << firmaC << " M EURA." << endl;
+
 
 
 	cin.get();
 	return 0;
-}
-float unosX() {
-	float X;
-	cout << "Unesite realan broj X: " << endl;
-	cin >> X;
-	return X;
-}
-int unosm() {
-	int m;
-	cout << "Unesite cijeli broj m: " << endl;
-	cin >> m;
-	return m;
-}
-float proracun_Izraza(float X, int m) {
-	float Izracun = 1;//Mnoozi se !!! Ako stavis na 0 sve ce biti nula UVIJEK;
-	char izbor;
-	do {
-		cout << "Unesite 's' za proracun sin izraza, 'c' za proracun cos, 'q' za proracun korijena ili 'p' za proracun stepena: " << endl;
-		cin >> izbor;
-		if (izbor != 's' && izbor != 'c' && izbor != 'q' && izbor != 'p')
-			cout << "POGRESAN UNOS!" << endl;
-	} while (izbor != 's' && izbor != 'c' && izbor != 'q' && izbor != 'p');
-	switch (izbor) {
-	case 's': {
-		for (int i = 1; i <= m; i++)
-		{
-			Izracun *= (sin(X) + i);
-		}
-		return Izracun;
-	}break;
-	case 'c': {
-		for (int i = 1; i <= m; i++)
-		{
-			Izracun *= (cos(X) + i);
-		}
-		return Izracun;
-	}break;
-	case 'q': {
-		for (int i = 1; i <= m; i++)
-		{
-			Izracun *= (sqrt(X) + i);
-		}
-		return Izracun;
-	}break;
-	case 'p': {
-		for (int i = 1; i <= m; i++)
-		{
-			Izracun *= (pow(X, 3) + i);
-		}
-		return Izracun;
-	}break;
-	default: {
-		cout << "Doslo je do greske, pokrenite ponovno program!" << endl;
-	}
-	}
 }

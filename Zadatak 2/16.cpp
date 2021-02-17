@@ -1,53 +1,63 @@
 #include <iostream>
 using namespace std;
 
-int unos();
-bool prost(int);
-void program(int, int);
+int unosm();
+int unosn();
+bool slozeni(int);
+float artimeticka_sredina(int, int);
 int main() {
-	int a = unos();
-	int b = unos();
-	program(a, b);
-
-
+	int m = unosm();
+	int n = unosn();
+	cout << "Aritmeticka sredina svih slozenih brojeva  u datom intervalu je: " << artimeticka_sredina(n, m) << endl;
 
 
 
 	cin.get();
 	return 0;
 }
-int unos() {
-	int broj;
+int unosm() {
+	int m;
 	do {
-		cout << "Unesite broj : " << endl;
-		cin >> broj;
-	} while (broj < 1 || broj >= 500);
-	return broj;
+		cout << "Unesite broj m: " << endl;
+		cin >> m;
+	} while (m >= 100 || m <= 10);
+	return m;
 }
-bool prost(int broj) {
+int unosn() {
+	int n;
+	do {
+		cout << "Unesite broj n: " << endl;
+		cin >> n;
+	} while (n >= 2000 || n <= 500);
+	return n;
+}
+bool slozeni(int broj) {
 	for (int i = 2; i <= broj / 2; i++)
 	{
 		if (broj % i == 0)
-			return false;
+			return true;
 	}
-	if (broj == 1)
-		return false;
-	return true;
+	return false;
 }
-void program(int a, int b) {
-	if (a > b) {
-		int temp = a;
-		a = b;
-		b = temp;
+float artimeticka_sredina(int m, int n) {
+	float artim = 0.0;
+	int brojac = 0;
+	if (m > n) {
+		int temp = n;
+		n = m;
+		m = temp;
 	}
-	int najveciProstbr = 0;
-	for (int i = a + 1; i < b; i++)//a+1 da se izbjegne prva a i<b da se izbjegne zadnja, npr: 1 2 3 4 5  uzimace se cifre 2 3 4;
+	cout << "Brojevi su: " << endl;
+	for (int i = m; i <= n; i++)
 	{
-		if (prost(i)) {
-			if (i > najveciProstbr) {
-				najveciProstbr = i;
-			}
+		cout << i << " ";
+		if (slozeni(i)) {
+			artim += i;
+			brojac++;
 		}
 	}
-	cout << "Najveci prosti broj u datom intervalu zavrsava sa cifrom: " << najveciProstbr % 10 << endl;
+	cout << endl;
+	if (brojac != 0)
+		artim /= brojac;
+	return artim;
 }

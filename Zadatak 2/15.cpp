@@ -2,45 +2,57 @@
 using namespace std;
 
 int unos();
-bool prost(int);
-void program(int, int);
+float srednjaCifra(int);
+int brojCifri(int);
+int pomnozi(int);
 int main() {
-	int a = unos();
-	int b = unos();
-	program(a, b);
+	int N = unos();
+	cout << "Najmanja int vrijednost sa kojom se treba pomnoziti srednja cifra broja N: " << srednjaCifra(N) << " je broj : " << pomnozi(N) << endl;
+
+
+
 	cin.get();
 	return 0;
+
 }
 int unos() {
-	int broj;
-	do {
-		cout << "Unesite broj: " << endl;
-		cin >> broj;
-	} while (broj < 1 || broj >= 500);
-	return broj;
+	int N;
+	cout << "Unesite cijeli broj N : " << endl;
+	cin >> N;
+	return N;
 }
-bool prost(int broj) {
-	for (int i = 2; i <= broj / 2; i++)
-	{
-		if (broj % i == 0)
-			return false;
+int brojCifri(int broj) {
+	int br = 0;
+	while (broj > 0) {
+		broj /= 10;
+		br++;
 	}
-	if (broj == 1)
-		return false;
-	return true;
+	return br;
 }
-void program(int a, int b) {
-	int umnozak = 1;
-	if (a > b) {
-		int temp = b;
-		b = a;
-		a = temp;
+float srednjaCifra(int broj) {
+	int Brcif = brojCifri(broj);
+	if (Brcif % 2 == 0) {
+		float temp;
+		broj = broj / pow(10.0, (Brcif / 2 - 1));
+		temp = broj % 10;
+		broj /= 10;
+		temp += broj % 10;
+		return temp / 2.0;
 	}
-	for (int i = a; i <= b; i++)
-	{
-		if (prost(i)) {
-			umnozak *= i;
-		}
+	else {
+		broj = broj / pow(10.0, Brcif / 2);
+		return broj % 10;
 	}
-	cout << "Umnozak svih prostih brojeva u zadanom intervalu zavrsava sa cifrom: " << umnozak % 10 << endl;
+}
+int pomnozi(int N) {
+	float srednjaCodN = srednjaCifra(N);
+	float noviBroj = 0;
+	int brojac = 1;
+	while (noviBroj <= N) {
+		noviBroj = srednjaCodN * brojac;
+		if (noviBroj > N)
+			break;
+		brojac++;
+	}
+	return brojac;
 }

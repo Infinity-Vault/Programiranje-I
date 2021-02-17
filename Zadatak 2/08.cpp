@@ -1,62 +1,87 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+const int x = 100;
 
-int unos();
-int zamjenjeni(int);
+long long int Fibonacci(int);
+void napuniNizfibonacciElementima(long long int[]);
+void ispisiNiz(long long int[]);
+bool prost(long long int&);
+long long int Zbirfaktorijela(long long int[]);
+long long int Faktorijel(long long int);
 int main() {
-	int n = unos();
-	int M = zamjenjeni(n);
-	cout << "Uneseni broj je: " << n << " a napravljen je broj M  od broja n gdje su njegove parne cifre zamijenjene sa ciframa '5': " << M << endl;
-	cout << "Razlika ova dva broja je: " << abs(n - M) << endl;
-
+	//Kod radi okej ja mislim samo je eksikucija duga..., zato sto je bila koristena rekurzivna funkcija
+	long long int niz[x];
+	napuniNizfibonacciElementima(niz);
+	ispisiNiz(niz);
+	cout << "Zbir faktorijela prvih 100 prostih elemenata Fibonacci niza je: " << Zbirfaktorijela(niz);
 
 	cin.get();
 	return 0;
+}
+long long int Fibonacci(int broj) {
+	/*if (broj <= 1)
+		return 1;
+	else {
+		return Fibonacci(broj - 2) + Fibonacci(broj - 1);
+	}*/
+	int prvi = 1;
+	int drugi = 1;
+	int treci = 0;
+	if (broj == 0)
+		return 1;
+	if (broj == 1)
+		return 1;
+	for (int i = 2; i <= broj; i++)//Ide od dva jer prva dva zna da su 1 i 1 ( a ide od dva a ne od 3 kao sto bi norm fibb jer ovdje ide indeksacija od nule );
+	{
+		treci = prvi + drugi;
+		prvi = drugi;
+		drugi = treci;
+	}
+	return treci;
 
 }
-int unos() {
-	int n;
-	do {
-		cout << "Unesi broj: " << endl;
-		cin >> n;
-		if (n <= 0)
-			cout << "Niste unijeli pozitivan broj: " << endl;
-	} while (n <= 0);
-	return n;
+void napuniNizfibonacciElementima(long long int niz[]) {
+	for (int i = 0; i < x; i++)
+	{
+		niz[i] = Fibonacci(i);
+	}
+	cout << endl;
 }
-int zamjenjeni(int n) {
-	int Zamjena = 0;
-	int brojac = 0;
-	int cifra;
-	//Prvi nacin: Koristi obrnuti broj;
-
-	/*while (n > 0) {
-		cifra = n % 10;
-		if (cifra %2== 0) {
-			Zamjena = Zamjena * 10 + 5;
-			n /= 10;
-		}
-		else {
-			Zamjena = Zamjena * 10 + cifra;
-			n /= 10;
+void ispisiNiz(long long int niz[]) {
+	cout << "Elementi niza su: " << endl;
+	for (int i = 0; i < x; i++)
+	{
+		cout << niz[i] << " ";
+	}
+	cout << endl;
+}
+bool prost(long long int& broj) {
+	for (int i = 2; i <= broj / 2; i++)
+	{
+		if (broj % i == 0)
+			return false;
+	}
+	if (broj == 1)
+		return false;
+	return true;
+}
+long long int Zbirfaktorijela(long long int niz[]) {
+	long long int suma = 0;
+	for (int i = 0; i < x; i++)
+	{
+		if (prost(niz[i])) {
+			suma += Faktorijel(niz[i]);
 		}
 	}
-	return Zamjena;*/
+	return suma;
 
-	//Drugi nacin: Koristi normalan broj, ne obrnut;
-	while (n > 0) {
-		cifra = n % 10;
-		if (cifra % 2 == 0) {
-			Zamjena = 5 * pow(10.0, brojac) + Zamjena;
-			brojac++;
-			n /= 10;
-		}
-		else {
-			Zamjena = cifra * pow(10.0, brojac) + Zamjena;
-			brojac++;
-			n /= 10;
-		}
+}
+long long int Faktorijel(long long int broj) {
+	long long int F = 1;
+	for (int i = 1; i <= broj; i++)
+	{
+		F = F * i;
 	}
-	return Zamjena;
+	return F;
 }
 

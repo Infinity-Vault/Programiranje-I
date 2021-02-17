@@ -1,4 +1,4 @@
-## [**01**](01.cpp)
+## [**01 (Ispitni)**](01.cpp)
 
 Poštujući sve faze programiranja, napisati program koji korisniku omogućava unos realnog broja x i odabir funkcije za proračun datog izraza. KOrisnik bira funkciju unosom jednog od sljedećih karaktera: 's'(sin), 'c'(cos). U slučaju da korisnik unese karakter koji ne odgovara niti jednog od predefinisanih vrijednosti ispisati odgovarajuću poruku i ponoviti odabir.
 
@@ -14,7 +14,7 @@ Geometrijska sredina n brojeva se računa po formuli:
 
 ![](https://i.postimg.cc/SKnVLsCj/Screenshot-1.png)
 
-## [**03**](03.cpp)
+## [**03 (Ispitni)**](03.cpp)
 
 Napisati program u kojem je potrebno unijeti odabrani broj cifara počevši od cifre najveće težinske vrijednosti, pa od njih sastaviti i napisati prirodni broj. Unos cifara se prekida kada se unese broj manji od 0, ukoliko korisnik unese cifru veću od 9, ispisati poruku da cifra nije validna, ali se unos ne prekida. 
 
@@ -43,14 +43,14 @@ b) Za taj broj pronaći i ispisati prvu, srednju i zadnju cifu (koristiti zasebn
 
 c) Obrnuti cifre tom broju (npr. ako je broj bio 12345 treba biti 54321) 
 
-## [**05**](05.cpp)
+## [**05 (Ispitni)**](05.cpp)
 Napisati program koji će omogućiti unos prirodnog broja A (A > 100000), 
 te kreirati i ispisati broj B koji će se sastojati od cifara broja A u obrnutom redoslijedu u kojem je svaka parna uklonjena. 
 (npr. ako se unese 45362792 funkcija će vratiti 9735). Ispisati razliku brojeva A i B. 
 
 **(Obavezno koristiti bar jednu korisnički definiranu funkciju.)**
 
-## [**06**](06.cpp)
+## [**06 (Ispitni)**](06.cpp)
 
 Poštujući sve faze procesa programiranja, napisati program koji korisniku omogućava unos cijelog broja N, 
 te izračunava vrijednost sume faktorijela neparnih brojeva u intervalu [1, N]. Suma faktorijela prikazana je
@@ -63,7 +63,7 @@ Napišite program, poštujući sve faze procesa programiranja, koji će  ispisat
 **ABC = A! + B! + C!**
 
 
-## [**08**](08.cpp)
+## [**08 (Ispitni)**](08.cpp)
 Omogučiti unos dva broja X i Y iz intervala od 10 do 5000.
 Kreirati program koji će pronaći i ispisati sve brojeve od X do Y (uključujući granične vrijednosti) za koje važi da je obrnuti broj djeljiv sa
 njegovom sumom cifara.
@@ -84,7 +84,7 @@ Poštujući sve faze procesa programiranja, napišite program, koji za uneseni p
 
 ![](https://i.postimg.cc/zfP8qVsk/Screenshot-1.png)
 
-## [**11**](11.cpp)
+## [**11 (Ispitni)**](11.cpp)
 
 Napisati program koji korisniku omogućava unos realnog broja x, cijelog broja m i odabir funkcije za proračun datog izraza.
 Korisnik bira funkciju unosom sljedećih karaktera 's' (sin), 'c' (cos), 'q' (sqrt), 'p' (pow). 

@@ -1,30 +1,46 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
+int unos();
+bool prost(int);
+void program(int, int);
 int main() {
-	const double godisnjirastA = 2.05,
-		godisnirastB = 2.80,
-		godisnjirastC = 4.30;
-	double firmaA = 10, firmaB = 7, firmaC = 5;
-	int brojGodina = 0;
-	while (firmaB < firmaA || firmaC < firmaA) {
-		firmaA = firmaA + (firmaA * godisnjirastA / 100.0);
-		firmaB = firmaB + (firmaB * godisnirastB / 100.0);
-		firmaC = firmaC + (firmaC * godisnjirastC / 100.0);
-		brojGodina++;
-	}
-	if (firmaB > firmaC)
-		cout << "Firma B je prva prestigla firmu A za " << brojGodina << " godina." << endl;
-	else
-		cout << "Firma C je prva prestigla firmu A za " << brojGodina << " godina." << endl;
-
-	cout << "Godisnji prihod firme A u " << brojGodina << " godini iznosi " << setprecision(2) << firmaA << " M EURA." << endl;
-	cout << "Godisnji prihod firme B u " << brojGodina << " godini iznosi " << setprecision(2) << firmaB << " M EURA." << endl;
-	cout << "Godisnji prihod firme C u " << brojGodina << " godini iznosi " << setprecision(2) << firmaC << " M EURA." << endl;
-
-
-
+	int a = unos();
+	int b = unos();
+	program(a, b);
 	cin.get();
 	return 0;
+}
+int unos() {
+	int broj;
+	do {
+		cout << "Unesite broj: " << endl;
+		cin >> broj;
+	} while (broj < 1 || broj >= 500);
+	return broj;
+}
+bool prost(int broj) {
+	for (int i = 2; i <= broj / 2; i++)
+	{
+		if (broj % i == 0)
+			return false;
+	}
+	if (broj == 1)
+		return false;
+	return true;
+}
+void program(int a, int b) {
+	int umnozak = 1;
+	if (a > b) {
+		int temp = b;
+		b = a;
+		a = temp;
+	}
+	for (int i = a; i <= b; i++)
+	{
+		if (prost(i)) {
+			umnozak *= i;
+		}
+	}
+	cout << "Umnozak svih prostih brojeva u zadanom intervalu zavrsava sa cifrom: " << umnozak % 10 << endl;
 }
