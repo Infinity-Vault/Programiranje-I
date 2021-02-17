@@ -124,7 +124,7 @@ float* prosjecnaVisina(figura** niz, int red, int kolona) {
     }
 
 	// Podijelimo ukupnu vrijednost visina sa brojem figura ispod sporedne dijagonale kako bi dobili njihov prosjek
-    if (brojac != 0) {
+    if (brojac != 0) {//If-om provjerimo da se ne dijeli sa 0!
         average /= brojac;
     }
 	
