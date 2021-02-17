@@ -147,7 +147,7 @@ int maxKlub(kosarkas** niz, int red, int kolona) {
         }
     }
 
-	// Kompariranje svakog elementa niza pomocni kako bi se pronasao najveci broj koseva
+	// Kompariranje svakog elementa niza pomocni kako bi se pronasao najbolji klub (klub sa najvise koseva)
     int maxKlub = 0;
 	
     for (int i = 0; i < kolona; i++) // Do velicina kolona jer je to velicina niza pomocni
@@ -202,7 +202,7 @@ int* maxIgrac(kosarkas** niz, int red, int kolona, int max_klub) {
     int razlikaK = abs(najbolji - najgoriK); // abs() u slucaju da se oduzima od manjeg a ne od veceg;
 
     cout << "Najbolji kosarkas u klubu " << max_klub << " ima " << najbolji << " koseva" << endl;
-    cout << "Najgori kosarkas u cijeloj ligi ima golova:  " << najgoriK << endl;
+    cout << "Najgori kosarkas u cijeloj ligi ima koseva:  " << najgoriK << endl;
 
 	// Dealokacija pomocnih nizova
     delete[]pomocni;
