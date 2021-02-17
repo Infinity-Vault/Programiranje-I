@@ -29,7 +29,7 @@ struct uposlenik {
 void unos(uposlenik**, int, int); //funkcija za unos elemenata niza 
 void ispis(uposlenik**, int, int); //funkcija za ispis elemenata niza
 void odjel_sa_Najvecim_prosjekom(uposlenik**, int, int); //funkcija koja sluzi za racunanje koji odjel ima najveci prosjek plate
-void dealokacijaNiza(uposlenik**&, int, int); //funkcija koja sluzi za dealokaciju niza
+void dealokacijaNiza(uposlenik**&, int); //funkcija koja sluzi za dealokaciju niza
 int main() {
     srand((time(0))); //sluzi za generisanje uvijek drugacijek slucajnog broja pri pokretanju programa, ako bi se izbrisala ova linija slucajni broj kod plate uvijek bi bio isti
     int red, kolona;
@@ -112,8 +112,7 @@ void odjel_sa_Najvecim_prosjekom(uposlenik** niz, int red, int kolona) {
 
 }
 
-void dealokacijaNiza(uposlenik**& niz, int red, int kolona) {
-    //ne moramo zauprave kolone ovdje ni prosljediti jer ih necemo koristiti
+void dealokacijaNiza(uposlenik**& niz, int red) {
     for (int i = 0; i < red; i++)
     {
         delete[] * (niz + i); //ovdje brisemo nase kolone u nizu
