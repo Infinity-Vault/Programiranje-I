@@ -1,15 +1,15 @@
 #include <iostream>
 using  namespace std;
-const int x = 4, y = 4;
+const int x = 4, y = 4; //deklarisemo konstante koje ce nam biti dimenzije naseg dvodimenzionalnog niza gdje nam je x red a y kolona
 
-int brojCifri(int);
-void unos(int[][y]);
-void ispis(int[][y]);
-void transpose(int[][y]);
-bool prost_broj(int);
-float aritmeticka(int[][y]);
-int zbirCifri(int);
-void simpatican(int[][y]);
+int brojCifri(int); //funkcija koja racuna koliko cifri ima nas broj
+void unos(int[][y]); //funkcija pomocu koje unosimo elemente u nasu matricu
+void ispis(int[][y]); //funkcija pomocu koje ispisujemo elemente iz matrice
+void transpose(int[][y]); //funkcija koja će zamjeniti redove i kolone tj. ono sto je prije bilo zapisano u redu sad ce biti zapisano u koloni i naobratno
+bool prost_broj(int); //funkcija koja provjerava da li je uneseni broj prosti ili ne
+float aritmeticka(int[][y]); //funkcija koja racuna aritmeticku sredinu elemenata ispod sporedne dijagonale
+int zbirCifri(int); //funkcija koja zbraja cifre broja 
+void simpatican(int[][y]); //funkcija koja ispisiva i provjerava da li je element u nizu simpatican ili ne
 int main() {
 	int niz[x][y];
 	unos(niz);
@@ -34,7 +34,7 @@ int brojCifri(int broj) {
 }
 void unos(int niz[][y]) {
 	int temp;
-	cout << "Molim vas unesite elemente niza: " << endl;
+	cout << "Molim vas unesite 16 elemenata niza : " << endl;
 	for (int i = 0; i < x; i++)
 	{
 		for (int j = 0; j < y; j++)
@@ -44,7 +44,7 @@ void unos(int niz[][y]) {
 				niz[i][j] = temp;
 				if (brojCifri(temp) < 2 || brojCifri(temp) > 2)
 					cout << "Niste unijeli dvocifren broj!" << endl;
-			} while (brojCifri(temp) < 2 || brojCifri(temp) > 2);
+			} while (brojCifri(temp) < 2 || brojCifri(temp) > 2); //provjeravamo da li je uneseni broj dvocifren ili ne
 		}
 	}
 }
@@ -66,7 +66,7 @@ void transpose(int niz[][y]) {
 	{
 		for (int j = 0; j < y; j++)
 		{
-			niz2[i][j] = niz[j][i];
+			niz2[i][j] = niz[j][i]; //stavljamo elemente niza u pomocni niz tako da u njemu su obrnuti nase klone i redovi u odnosu na originalni niz
 		}
 	}
 	cout << endl;
@@ -82,18 +82,30 @@ void transpose(int niz[][y]) {
 	}
 }
 bool prost_broj(int broj) {
+	if (broj == 1) //1 nije prost broj
+		return false;
 	for (int i = 2; i <= broj / 2; i++)
 	{
 		if (broj % i == 0)
 			return false;
 	}
-	if (broj == 1)
-		return false;
 	return true;
 }
 float aritmeticka(int niz[][y]) {
 	float aritmeticka = 0.0;
 	int brojac = 0;
+	/*
+	sporedna dijagonala ide : 
+
+
+	*	*	*	*	/
+	*	*	*	/	*
+	*	*	/	*	*
+	*	/	*	*	*
+	/	*	*	*	*
+
+
+	*/
 	for (int i = 0; i < x; i++)
 	{
 		for (int j = 0; j < y; j++)
