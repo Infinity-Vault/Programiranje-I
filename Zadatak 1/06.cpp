@@ -1,5 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
 int SumaFaktorijela(int);
+
 int faktorijel(int);
+
 int main() {
 	int N;
 	cout << "Unesite neki cijeli broj: " << endl;

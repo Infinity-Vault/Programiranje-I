@@ -1,4 +1,9 @@
+#include <iostream>
+
+using namespace std;
+
 int napraviB(int);
+
 int main() {
 	int A;
 	int B;

@@ -1,8 +1,8 @@
 ﻿#include <iostream>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
-
-
 
 int unos();
 int prosjekProst(int n);
