@@ -7,7 +7,6 @@ int brojCifri(int);
 int main()
 {
 	int X = unos(), Y = unos();
-	//cout << djeljivost(13);
 	ispisiBrojeve(X, Y);
 
 
@@ -76,4 +75,40 @@ void ispisiBrojeve(int X, int Y)
 		if (djeljivost(i))
 			cout << i << " ";
 	}
+}
+
+//Drugi nacin  ako je nekome mozda jednostavniji za shvatiti: 
+
+#include<iostream>
+using namespace std;
+bool ispitaj(int a)
+{
+        while (a)
+        {
+                if (a % 10 == 0)
+                        return false;
+                if (a % (a % 10) != 0)
+                        return false;
+                a /= 10;
+        }
+        return true;
+}
+int main()
+{
+        int x, y;
+        while (cout << "Unesite x\t", cin >> x, x < 10 || x>6000);
+        while (cout << "Unesite y\t", cin >> y, y < 10 || y>6000);
+        if (x>y)
+        {
+                int y1 = y;
+                y = x;
+                x = y1;
+        }
+        for (size_t i = x; i <= y; i++)
+        {
+                if (ispitaj(i))
+                        cout << "Broj " << i << " je djeljiv sa svim svojim ciframa\n";
+        }
+        cin.get();
+        return 0;
 }
