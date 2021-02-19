@@ -26,15 +26,21 @@ int main()
 
 bool Prost(int broj)
 {
+	// 1, 0 i svi negativni brojevi nisu prosti
+	if (broj <= 1)
+		return false;
+	
 	for (int i = 2; i < broj; i++)
 		if (broj % i == 0)
 			return false;
+	
 	return true;
 }
 
 void Goldbach(int broj)
 {
 	for (int i = broj / 2, j = broj / 2; i <= broj; i++, j--)
+
 		if (Prost(i) && Prost(j))
 		{
 			cout << broj << "=" << i << "+" << j << endl;
@@ -50,8 +56,10 @@ void PozivGoldbacha(int n1, int n2)
 		n1 = n2;
 		n2 = temp;
 	}
+	
 	if (n1 % 2 != 0)
 		n1++;
+	
 	for (int i = n1; i <= n2; i += 2)
 		Goldbach(i);
 }
