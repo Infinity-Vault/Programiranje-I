@@ -239,8 +239,8 @@ Kreirati dvodimenzionalni dinamički niz čiji su elementi objekti  tipa fudbale
 ```c++
 struct fudbaler{
 int ID;
-char*ime_i_Prezime;//prihvati samo slova N, O i V (napad, vezni i odbrana);
-char* pozicija;
+char*ime_i_Prezime;
+char* pozicija;//prihvati samo slova N, O i V (napad, vezni i odbrana);
 int *broj_golova;
 };
 ```
