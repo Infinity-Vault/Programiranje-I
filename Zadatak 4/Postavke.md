@@ -232,7 +232,7 @@ Kompletan 2D niz predstavlja univerzitet. Redovi dvodimenzionalnog niza predstav
 
 
 
-### [**15** (**Ispitni**)](15.cpp)
+## [**15** (**Ispitni**)](15.cpp)
 
 Kreirati dvodimenzionalni dinamički niz čiji su elementi objekti  tipa fudbaler ( fudbaler je struktura čija su obilježja data u nastavku).
 
