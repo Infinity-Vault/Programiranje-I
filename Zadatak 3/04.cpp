@@ -19,7 +19,9 @@ int main()
 
 	cout << "Elementi niza sa faktorijelima su: ";
 	ispisNiz(niz, n); //pozivamo funkciju za ispis niza
-
+	
+	delete[]niz; //brisemo dinamički niz
+	niz=NULL; //stavljamo da ne pokaziva na ništa
 	return 0;
 }
 
