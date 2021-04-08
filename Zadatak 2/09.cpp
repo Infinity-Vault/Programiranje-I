@@ -28,7 +28,7 @@ int unosm() {
 	return m;
 }
 float proracun_Izraza(float X, int m) {
-	float Izracun = 1;//Mnoozi se !!! Ako stavis na 0 sve ce biti nula UVIJEK;
+	float Izracun = 0.0f;
 	char izbor;
 	do {
 		cout << "Unesite 's' za proracun sin izraza, 'c' za proracun cos, 'q' za proracun korijena ili 'p' za proracun stepena: " << endl;
@@ -40,31 +40,31 @@ float proracun_Izraza(float X, int m) {
 	case 's': {
 		for (int i = 1; i <= m; i++)
 		{
-			Izracun *= (sin(X) + i);
+			Izracun += (sin(X) + i);
 		}
 		return Izracun;
-	}break;
+	}
 	case 'c': {
 		for (int i = 1; i <= m; i++)
 		{
-			Izracun *= (cos(X) + i);
+			Izracun += (cos(X) + i);
 		}
 		return Izracun;
-	}break;
+	}
 	case 'q': {
 		for (int i = 1; i <= m; i++)
 		{
-			Izracun *= (sqrt(X) + i);
+			Izracun += (sqrt(X) + i);
 		}
 		return Izracun;
-	}break;
+	}
 	case 'p': {
 		for (int i = 1; i <= m; i++)
 		{
-			Izracun *= (pow(X, 3) + i);
+			Izracun += (pow(X, 3) + i);
 		}
 		return Izracun;
-	}break;
+	}
 	default: {
 		cout << "Doslo je do greske, pokrenite ponovno program!" << endl;
 	}
