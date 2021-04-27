@@ -63,7 +63,7 @@ float unosN() {
 	do {
 		cout << "Molim vas unesite broj: " << endl;
 		cin >> N;
-	} while (N > 10 && N > 1000);
+	} while (N <= 10 || N >= 1000); 
 	return N;
 }
 int baciKocku() {
