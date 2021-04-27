@@ -1,56 +1,43 @@
-﻿#include <iostream>
+
+#include <iostream>
 #include <cmath>
-
 using namespace std;
-
-float proracun(float x, char izbor);
-
-int main()
-{
-	float x;
+	float sinx(float);
+	float cosx(float);
+	int main() {
+	float broj = 0.0f;
 	char izbor;
-
-	cout << "Unesite realni broj x: ";
-	cin >> x;
-
-	do
-	{
-		cout << "Unesite zeljenu funkciju (s - sin, c - cos): ";
+	cout << "Unesite neki realan broj. " << endl;
+	cin >> broj;
+	do{
+		cout << "Odaberite funkciju. s za sinus i c za cosinus." << endl;
 		cin >> izbor;
-
-		if (izbor != 's' && izbor != 'c')
-			cout << "Niste unijeli korektnu funkciju, ponovite unos" << endl;
-		
-	} while (izbor != 's' && izbor != 'c');
-
-	cout << "Proracun datog izraza je: " << proracun(x, izbor) << endl;
-
-	return 0;
-}
-
-float proracun(float x, char izbor)
-{
-	if (izbor == 's')
-	{
-		float rezultat = 0.0f;
-
-		for (int i = 1; i <= x; i++)
-		{
-			rezultat += i / (sin(x / i) + x);
-		}
-
-		return rezultat;
+		if (izbor == 's')
+		cout << sinx(broj);
+		else if (izbor == 'c')
+		cout << cosx(broj);
+		else cout << "Niste unijeli odgovarajuci unos. Molimo unesite ispravnu funkciju." << endl;
+	} while (izbor !='s' && izbor!='c');
+		system("pause>null");
+		return 0;
 	}
-
-	else
+	float sinx(float broj) {
+	double suma=1.0f;
+	float const PI = 3.14159265;
+	for (int i = 1; i <= broj; i++)
 	{
-		float rezultat = 0.0f;
-
-		for (int i = 1; i <= x; i++)
-		{
-			rezultat += i / (cos(x / i) + x);
-		}
-
-		return rezultat;
+		suma += i / (sin(PI / 180 *( broj / i)) + broj);
 	}
+	cout << "Rezultat unesene funkcije je: ";
+	return suma;
+	}
+	float cosx(float broj) {
+	double suma = 1.0f;
+	float const PI = 3.14159265;
+	for (int i=1 ; i <= broj; i++)
+	{
+		suma += i / (cos(PI / 180 *(broj / i)) + broj);
+	}
+	cout << "Rezulatat unesene funkcije je: ";
+	return suma;
 }
