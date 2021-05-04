@@ -4,7 +4,7 @@ using namespace std;
 
 int unos();
 float unosX();
-float Suma(int, float);
+double Suma(int, float);
 int main() {
 	int n = unos();
 	float X = unosX();
@@ -29,7 +29,7 @@ float unosX() {
 	cin >> X;
 	return X;
 }
-float Suma(int n, float X) {
+double Suma(int n, float X) {
 	double Suma = 0.0;
 	for (int i = 1; i <= n; i++)
 	{

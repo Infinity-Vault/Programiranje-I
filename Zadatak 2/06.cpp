@@ -2,14 +2,15 @@
 #include <time.h>
 using namespace std;
 
-int unosN();
+float unosN();
 int baciKocku();
 int vratiProcenat(int);
 int main() {
 	srand((time(0)));
 	int baceno = 0;
 	int case1 = 0, case2 = 0, case3 = 0, case4 = 0, case5 = 0, case6 = 0;
-	int N, Kocka;
+	float N;
+	int Kocka;
 	N = unosN();
 	//Moze i sa for i sa while!!!
 	while (baceno < N) {//Treba < ne <= jer ide od nule brojac;
@@ -57,12 +58,12 @@ int main() {
 	cin.get();
 	return 0;
 }
-int unosN() {
-	int N;
+float unosN() {
+	float N;
 	do {
 		cout << "Molim vas unesite broj: " << endl;
 		cin >> N;
-	} while (N > 10 && N > 1000);
+	} while (N <= 10 || N >= 1000); 
 	return N;
 }
 int baciKocku() {
