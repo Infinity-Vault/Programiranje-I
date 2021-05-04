@@ -17,7 +17,7 @@ int main() {
 }
 int SumaFaktorijela(int N) {
 	int suma = 0;
-	for (int i = 1; i < N; i += 2)//Kontrola petlje da se samo krece po neparnim;
+	for (int i = 1; i <= N; i += 2)//Kontrola petlje da se samo krece po neparnim;
 	{
 		suma += faktorijel(i);
 	}
