@@ -47,14 +47,9 @@ bool slozeni(int broj) {
 }
 
 float artimeticka_sredina(int m, int n) {
+	
 	float artim = 0.0f;
 	int brojac = 0;
-	
-	if (m > n) {
-		int temp = n;
-		n = m;
-		m = temp;
-	}
 	
 	cout << "Brojevi su: " << endl;
 	for (int i = m; i <= n; i++)
