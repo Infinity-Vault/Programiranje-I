@@ -172,7 +172,8 @@ void prosjecna_Kubikaza(vozilo** niz, int red, int kolona) {
 	
     float prosjek_A = 0.0f;
     float prosjek_B = 0.0f;
-    int A = 0, B = 0; // Brojac sa vozila tipa 'A' i 'B' (da bi mogli racunati prosjek kubikaze nekog tipa vozila moramo znati koliko ih ima prvo
+    float prosjek_C = 0.0f;
+    int A = 0, B = 0, C = 0; // Brojac sa vozila tipa 'A', 'B' i 'C' (da bi mogli racunati prosjek kubikaze nekog tipa vozila moramo znati koliko ih ima prvo
 	
     for (int i = 0; i < red; i++)
     {
@@ -187,6 +188,10 @@ void prosjecna_Kubikaza(vozilo** niz, int red, int kolona) {
                 prosjek_B += *(*(niz + i) + j)->kubnihCM;
                 B++;
             }
+		
+	    else if (*(*(niz + i) + j)->tipVozila == 'C') {
+		prosjek_C += *(*(niz + i) + j)->kubnihCM;
+		C++;    
         }
     }
     // Racunamo prosjek nekog tipa tako što podijelimo ukupnu kubikazu svih vozila tog tipa sa brojem vozila
@@ -198,6 +203,12 @@ void prosjecna_Kubikaza(vozilo** niz, int red, int kolona) {
        prosjek_B /= B;
     }
 
+    if (C != 0) {
+       prosjek_C /= C;
+    }
 
-    cout << "Prosjecna kubikaza vozila  sa A kategorijom je: " << prosjek_A << " dok je prosjecna kubikaza vozila sa kategorijom B : " << prosjek_B << endl;
+
+    cout << "Prosjecna kubikaza vozila sa A kategorijom je: " << prosjek_A << endl;
+    cout << "Prosjecna kubikaza vozila sa B kategorijom je: " << prosjek_B << endl;
+    cout << "Prosjecna kubikaza vozila sa C kategorijom je: " << prosjek_C << endl;
 }
