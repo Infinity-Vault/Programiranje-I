@@ -1,5 +1,6 @@
 # Programiranje-I
 **Repozitorij za zadatke i kodove iz PR-I**
+<br>
 ![](https://komarev.com/ghpvc/?username=Programiranje-I&label=Broj+posjeta:)
 
 <hr>
