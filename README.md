@@ -1,5 +1,5 @@
 # Programiranje-I
-Repozitorij za zadatke i kodove iz PR-I
+**Repozitorij za zadatke i kodove iz PR-I**
 
 <hr>
 
