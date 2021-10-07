@@ -1,81 +1,55 @@
-﻿#include <iostream>
-
+#include <iostream>
 using namespace std;
 
-void napuniNiz(int*, int, int brojac = 0);
-void provjeri(int*, int, int, int brojac = 0);
-
-int main() {
-
-	int velicina;
-	
-	cout << "Unesite velicinu niza koju zelite: " << endl;
-	cin >> velicina;
-	
-	int* niz = new int[velicina] {};
-	
-	napuniNiz(niz, velicina);
-	
-	for (int i = 0; i < velicina; i++)
+void rekurzija(int* niz, int vel, int brojac = 0)
+{
+	if (brojac == vel)
+		return;
+	if (brojac == 0)
+		*(niz + brojac) = 2;
+	else
 	{
-		cout << *(niz + i) << " ";
+		if (*(niz + brojac - 1) * 2 < 0)
+			return;
+		else
+			*(niz + brojac) = *(niz + brojac - 1) * 2;
 	}
-	
-	cout << "\n";
-	
-	int izbor;
-	cout << "Unesite broj koji zelite potraziti u nizu: " << endl;
+	rekurzija(niz, vel, brojac + 1);
+}
+
+void ispis(int* niz, int vel)
+{
+	for (int i = 0; i < vel; i++)
+		cout << *(niz + i) << endl;
+}
+
+bool provjera(int* niz, int vel, int izbor, int brojac = 0)
+{
+	if (brojac == vel)
+		return false;
+	if (*(niz + brojac) == izbor)
+		return true;
+	provjera(niz, vel, izbor, brojac + 1);
+}
+int main()
+{
+	int vel, izbor;
+	do
+	{
+		cout << "Unesite velicinu niza " << endl;
+		cin >> vel;
+	} while (vel < 2);
+	int* niz = new int[vel];
+	rekurzija(niz, vel);
+	ispis(niz, vel);
+	cout << "Unesite broj za koji zelite provjeriti da li se nalazi u nizu " << endl;
 	cin >> izbor;
-	provjeri(niz, velicina, izbor);
-	
-	//Dealokacija:
+	if (provjera(niz, vel, izbor))
+		cout << "Broj " << izbor << " se nalazi u nizu " << endl;
+	else
+		cout << "Broj " << izbor << " se ne nalazi u nizu " << endl;
 	delete[]niz;
 	niz = nullptr;
-	
-	cin.get();
+	system("pause>0");
 	return 0;
-}
-void napuniNiz(int* niz, int velicina, int brojac) {
-	
-	if (brojac == velicina) // Bazni slucaj kada brojac dođe do velicine, tu se rekurzija prekide jer ne zelimo pisati van opsega niza
-		return;
-	
-	if (brojac < velicina) {
-		
-		if (brojac == 0) // Prvi element mora biti 2 prema postavci zadatka
-			*(niz + brojac) = 2;
-		
-		if (brojac > 0) { // Svaki sljedeci element se nalazi kao umnozak prethodnog
-			int temp = *(niz + brojac - 1) * 2;
-			
-			if (temp < 0) // U slucaju da se desi overflow na int temp, rekurzija se prekida
-				return;
-			
-			*(niz + brojac) = temp;
-		}
-
-		// Rekurzija se nastavlja novim pozivom s tim što se brojac inkrementuje kako bi dosli do sljedeceg elementa
-		napuniNiz(niz, velicina, brojac + 1);
-	}
-}
-
-void provjeri(int* niz, int velicina, int izbor, int brojac) {
-
-	// Prekida rekurziju kad dođe van opsega niza i ispise da nije nasao clan
-	if (brojac == velicina)
-	{
-		cout << "Uneseni broj nije clan niza!" << endl;
-		return;
-	}
-
-	// Ako nađe proslijeđeni broj (int izbor) onda ispise da ga je našao i prekida rekurziju
-	if (brojac < velicina) {
-		if (*(niz + brojac) == izbor)
-		{
-			cout << "Uneseni broj je clan niza!" << endl;
-			return;
-		}
-		
-		provjeri(niz, velicina, izbor, brojac + 1);
-	}
 }
