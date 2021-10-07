@@ -1,63 +1,43 @@
-﻿#include <iostream>
+#include <iostream>
 #include <ctime>
-#include <cstdlib>
-
 using namespace std;
 
-int unos();
-int prosjekProst(int n);
-
-bool prost(int broj);
-
-int main()
+bool prost(int broj)
 {
-	srand(time(0));
-	int n = unos();
-
-	cout << "Prosjek prostih brojeva medju nasumicnim brojevima je: " << prosjekProst(n) << "%" << endl;
+	for (int i = 2; i < broj; i++)
+	{
+		if (broj % i == 0)
+			return false;
+	}if (broj == 1)
+		return false;
+	return true;
 }
 
 int unos()
 {
-	int n;
-
+	int broj;
 	do
 	{
-		cout << "Unesite broj n (10 <= n <= 1000): ";
-		cin >> n;
-	} while (n < 10 || n > 1000);
-
-	return n;
+		cout << "Unesite broj veci od 10 i manji od 1000 " << endl;
+		cin >> broj;
+	} while (broj < 10 || broj>1000);
+	return broj;
 }
 
-int prosjekProst(int n)
-{
-	int prosjek_prostih = 0;
-	int temp_n = n;
-	
-	while (temp_n != 0)
+int main()
+{ 
+	srand(time(0));
+	int n = unos();
+	float brojac = 0;
+
+	for (int i = 0; i < n; i++)
 	{
-		int temp = rand() % 1000 + 1;
-
-		if (prost(temp))
-			prosjek_prostih++;
-
-		temp_n--;
+		int varijabla = rand() % 1000 + 1;
+		if (prost(varijabla))
+			brojac++;
 	}
-	
-	return  (float)prosjek_prostih / n * 100;
-}
-
-bool prost(int broj)
-{
-	if (broj == 1)
-		return false;
-	
-	for (int i = 2; i <= broj / 2; i++)
-	{
-		if (broj % i == 0)
-			return false;
-	}
-
-	return true;
+	cout << "Ima " << brojac << " prostih brojeva " << endl;
+	cout << "Procenat prostih brojeva je " << brojac / n * 100.0 << " % " << endl;
+	system("pause>0");
+	return 0;
 }
