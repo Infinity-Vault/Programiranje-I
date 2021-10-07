@@ -46,3 +46,8 @@ Zatim napraviti funkciju koja će sortirati niz uzlazno po srednjoj cifri.
 Kreirati jednodim dinam niz n velicine i napuniti ga serijom kubova svakog proslog broja pocevsi od 2. Prekida se kada se deesi overflow, napuni niz.Ispisati niz rekurzivno!
 
 **Koristiti aritmetiku pointera!**
+## [**08**](08.cpp)
+Napisati program koji učitava prirodan broj n.Program treba ispisati najmanji prirodni broj m ,veći ili jednak n , koji je potencija nekog prirodnog broja, tj. m=k^l, gdje su k i l≥2 prirodni brojevi. U ovom zadatku je zabranjeno koristiti pow funkciju za računanje potencije.Potenciju računati koristeći rekurzivnu funkciju kojoj se proslijeđuje k i l i u kojoj je dozvoljena samo operacija množenja.
+
+**Za olakšanje rješenja, možete odabrati prototip funkcija po želji.**
+
