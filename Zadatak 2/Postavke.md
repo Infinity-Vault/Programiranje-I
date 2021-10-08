@@ -156,4 +156,8 @@ srednja cifra/sredina proizvoda brojeva 149 i 20 (149 * 20 = 2980) je: 8.5
 unesi m i n: 150, 0
 forsirani prekid...
 ```
-
+## [**18 (Ispitni)**](18.cpp)
+Napisati program koji ce omogućiti korisniku unos broja n (uz uslov 10 <= n <= 1000). Zatim simulirati unos n slučajnih vrijednosti. Simuliranje unosa ostvariti funkcijom rand()% 1000 + 1. Izračunati statitičke podatke u kojem procentu se od n generisanih slučajnih vrijednosti pojavljuje savršen broj .
+**Za neki broj se kaze da je savrsen ako je jednak sumi svih svojih djelilaca (ne uključujući njega samog)** .
+Npr. 28 je savršen broj : njegovi djelioci su 1 , 2 , 4 , 7 i 14 , a 1 + 2 + 4 + 7 + 14 = 28
+Jedini savršeni brojevi od 1 do 100 su brojevi 6 i 28
