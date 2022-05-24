@@ -1,30 +1,22 @@
 #include <iostream>
-using namespace std;
 
-void unos(int& broj)
-{
-	cout << "Upisi cifru " << endl;
-	cin >> broj;
-}
+using namespace std;
 
 int main()
 {
-	int broj = 0, novi = 0;
-	do
-	{
-		unos(broj);
-		if (broj <= 9 && broj >= 0)
-		{
-			novi = novi * 10 + broj;
-		}
+    unsigned long int broj = 0;
+    int temp;
 
-		if (broj > 9)
-		{
-			cout << "Cifra nije validna " << endl;
-		}
-	} while (broj >= 0);
+    while (cout << "Upisi cifru: ", cin >> temp, temp >= 0) 
+    {
+        if(temp > 9)
+            cout << "Cifra nije validna.\n";
+        else
+            broj = broj * 10 + temp;
+    }
 
-	cout << "Sastavljen broj je " << novi << endl;
-	system("pause>0");
-	return 0;
+    cout << "Broj sastavljen od zadanih cifara je: " << broj;
+
+    system("pause>0");
+    return 0;
 }
