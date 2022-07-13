@@ -1,0 +1,27 @@
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '55 21 * * *'
+
+jobs:
+ ReportTraffic:
+   runs-on: ubuntu-latest
+
+   steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: "main"
+    
+    # Calculates traffic and clones and stores in CSV file
+    - name: Retrieve new traffic 
+      uses: sangonzal/repository-traffic-action@v.0.1.6
+      env:
+        TRAFFIC_ACTION_TOKEN: ${{ secrets.TRAFFIC_ACTION_TOKEN }} 
+     
+    - name: Upload to Google Drive
+      uses: team-tumbleweed/gdrive-upload-action@main
+      with:
+          filename: "traffic/views.csv"
+          name: "ProgramiranjeI_views.csv"
+          folderId: ${{ secrets.DRIVE_FOLDER_ID }}
+          credentials: ${{ secrets.DRIVE_GSA_CREDENTIALS }}
